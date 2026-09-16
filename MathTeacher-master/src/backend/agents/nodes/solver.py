@@ -226,10 +226,43 @@ class SolverAgent(BaseAgent):
             tool_choice={"type": "function", "function": {"name": "rag_tool"}},
         )
 
+    # 提示词已中文化，模型实际输出 "∴ 最终答案：..."。
+    # 这里必须同时兼容中英文标记，否则匹配失败会退化成"取最后一行"，
+    # 从而把"易错提醒"之类的收尾段落误当成最终答案。
+    _FINAL_ANSWER_MARKERS = (
+        "∴ 最终答案：", "∴ 最终答案:",
+        "最终答案：",   "最终答案:",
+        "∴ 答案：",     "∴ 答案:",
+        "∴ Final Answer:", "Final Answer:", "FINAL ANSWER:",
+    )
+
+    @staticmethod
+    def _first_answer_paragraph(tail: str) -> str:
+        """取标记之后的第一段（以空行分段）。
+
+        这样既能排除“易错提醒”之类的收尾说明，又能保留同一段内
+        换行书写的公式，例如：
+
+            ∴ 最终答案：随机取一件产品，它是次品的概率为
+            \\[
+            \\boxed{0.032=3.2\\%}
+            \\]
+        """
+        block: list[str] = []
+        for line in tail.splitlines():
+            if not line.strip():
+                if block:
+                    break
+                continue
+            block.append(line.strip())
+        return "\n".join(block)
+
     def _extract_final_answer(self, text: str) -> str:
-        for marker in ("∴ Final Answer:", "Final Answer:", "FINAL ANSWER:"):
+        for marker in self._FINAL_ANSWER_MARKERS:
             if marker in text:
-                return text.split(marker)[-1].strip()
+                answer = self._first_answer_paragraph(text.split(marker)[-1])
+                if answer:
+                    return answer
         lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
         return lines[-1] if lines else text
 

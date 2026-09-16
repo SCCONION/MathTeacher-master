@@ -1,0 +1,213 @@
+﻿mode,question_id,topic,concept,difficulty,question,answer_type,gold,attempts,first_pass_correct,final_correct,recovered,regressed,final_verifier_status,verifier_agreement_events,verifier_total_events,verifier_false_accept_events,verifier_false_reject_events,rag_used,calculator_used,web_used,latency_ms,error,first_pred,final_pred,first_answer_segment,final_answer_segment
+no_rag,s001,二次函数,求根公式,easy,解方程 x²-5x+6=0，求全部实数解。,set,"[""2"", ""3""]",1,True,True,False,False,correct,1,1,0,0,False,False,False,4511.4878000022145,,"[""2"", ""3""]","[""2"", ""3""]","x=2,\ x=3","x=2,\ x=3"
+no_rag,s002,二次函数,求根公式,easy,解方程 x²-9=0，求全部实数解。,set,"[""-3"", ""3""]",1,True,True,False,False,correct,1,1,0,0,False,False,False,3282.886899993173,,"[""-3"", ""3""]","[""-3"", ""3""]",x = 3 或 x = -3,x = 3 或 x = -3
+no_rag,s003,二次函数,求根公式,medium,解方程 2x²-7x+3=0，求全部实数解。,set,"[""1/2"", ""3""]",1,True,True,False,False,correct,1,1,0,0,False,False,False,4630.497499994817,,"[""1/2"", ""3""]","[""1/2"", ""3""]","x = 1/2,x = 3.","x = 1/2,x = 3."
+no_rag,s004,二次函数,顶点横坐标与对称轴,easy,二次函数 y=2x²-8x+3 的顶点横坐标是多少？,scalar,2,1,True,True,False,False,correct,1,1,0,0,False,False,False,3909.38169999572,,2,2,顶点横坐标为 x = 2.,顶点横坐标为 x = 2.
+no_rag,s005,二次函数,配方法与最值,medium,求二次函数 y=x²-6x+11 的最小值。,scalar,2,1,True,True,False,False,correct,1,1,0,0,False,False,False,3286.564300011378,,2,2,最小值为 2（在 x = 3 处取得）.,最小值为 2（在 x = 3 处取得）.
+no_rag,s006,二次函数,韦达定理,medium,方程 3x²-5x-2=0 的两根之和是多少？,scalar,5/3,1,True,True,False,False,correct,1,1,0,0,False,False,False,3797.923799997079,,5/3,5/3,\boxed{5/3},\boxed{5/3}
+no_rag,s007,二次函数,韦达定理,medium,方程 4x²+7x-3=0 的两根之积是多少？,scalar,-3/4,1,True,True,False,False,correct,1,1,0,0,False,False,False,3690.220100004808,,-3/4,-3/4,两根之积为 -3/4.,两根之积为 -3/4.
+no_rag,s008,二次函数,判别式与实根个数,medium,若方程 x²-4x+k=0 有两个相等的实根，求 k。,scalar,4,1,True,True,False,False,correct,1,1,0,0,False,False,False,3093.4041000000434,,4,4,k=4,k=4
+no_rag,s009,二次函数,求根公式,medium,方程 x²+x-6=0 的正根是多少？,scalar,2,1,True,True,False,False,correct,1,1,0,0,False,False,False,3787.7819999994244,,2,2,x = 2,x = 2
+no_rag,s010,二次函数,求根公式,easy,解方程 (x-1)(x+4)=0，求全部实数解。,set,"[""-4"", ""1""]",1,True,True,False,False,correct,1,1,0,0,False,False,False,4220.506800003932,,"[""-4"", ""1""]","[""-4"", ""1""]","x = 1,x = -4.","x = 1,x = -4."
+no_rag,s011,方程与不等式,绝对值方程,medium,解方程 |2x-3|=5，求全部实数解。,set,"[""-1"", ""4""]",1,True,True,False,False,correct,1,1,0,0,False,False,False,3970.411600006628,,"[""-1"", ""4""]","[""-1"", ""4""]",x=4 或 x=-1.,x=4 或 x=-1.
+no_rag,s012,方程与不等式,线性方程组,easy,已知 x+y=7，x-y=1，求 x。,scalar,4,1,True,True,False,False,correct,1,1,0,0,False,False,False,2890.7194000057643,,4,4,x=4,x=4
+no_rag,s013,方程与不等式,分式方程,medium,解方程 1/(x-1)=2，求 x。,scalar,3/2,1,True,True,False,False,correct,1,1,0,0,False,False,False,4091.648500005249,,3/2,3/2,x=3/2,x=3/2
+no_rag,s014,方程与不等式,根式方程,medium,解方程 √(x+1)=3，求 x。,scalar,8,1,True,True,False,False,correct,1,1,0,0,False,False,False,3563.619499997003,,8,8,x=8,x=8
+no_rag,s015,方程与不等式,一元一次不等式,easy,满足 3x-5>7 的最小整数 x 是多少？,scalar,5,1,True,True,False,False,correct,1,1,0,0,False,False,False,3882.734900005744,,5,5,\boxed{5},\boxed{5}
+no_rag,s016,方程与不等式,基本不等式,medium,当 x>0 时，x+9/x 的最小值是多少？,scalar,6,1,True,True,False,False,correct,1,1,0,0,False,False,False,3779.364700007136,,6,6,"当 x=3 时,x+(9)/(x) 取得最小值 \boxed{6}.","当 x=3 时,x+(9)/(x) 取得最小值 \boxed{6}."
+no_rag,s017,方程与不等式,柯西不等式,medium,"实数 x,y 满足 x+y=10，求 x²+y² 的最小值。",scalar,50,1,True,True,False,False,correct,1,1,0,0,False,False,False,5031.365100003313,,50,50,"x+y 的最小值为 \boxed{50},当 x=y=5 时取得.","x+y 的最小值为 \boxed{50},当 x=y=5 时取得."
+no_rag,s018,方程与不等式,线性方程组,medium,已知 2x+3y=13，x-y=1，求 y。,scalar,11/5,1,True,True,False,False,correct,1,1,0,0,False,False,False,4630.340200004866,,11/5,11/5,y=11/5,y=11/5
+no_rag,s019,方程与不等式,绝对值不等式,medium,满足 |x-2|<3 的整数 x 一共有多少个？,scalar,5,1,True,True,False,False,correct,1,1,0,0,False,False,False,3283.3652999979677,,5,5,\boxed{5} 个.,\boxed{5} 个.
+no_rag,s020,方程与不等式,二次不等式符号,medium,满足 x²-5x+6≤0 的整数 x 一共有多少个？,scalar,2,1,True,True,False,False,correct,1,1,0,0,False,False,False,3590.9046000015223,,2,2,满足条件的整数 x 一共有 \boxed{2} 个.,满足条件的整数 x 一共有 \boxed{2} 个.
+no_rag,s021,三角函数,同角基本关系,easy,sin 30° 的值是多少？,scalar,1/2,1,True,True,False,False,correct,1,1,0,0,False,False,False,4388.931599998614,,1/2,1/2,\sin 30^\circ = 1/2（即 0.5）.,\sin 30^\circ = 1/2（即 0.5）.
+no_rag,s022,三角函数,同角基本关系,easy,cos 60° 的值是多少？,scalar,1/2,1,True,True,False,False,correct,1,1,0,0,False,False,False,4327.98850000836,,1/2,1/2,\cos 60^\circ = 1/2.,\cos 60^\circ = 1/2.
+no_rag,s023,三角函数,同角基本关系,easy,tan 45° 的值是多少？,scalar,1,1,True,True,False,False,correct,1,1,0,0,False,False,False,3997.3224999994272,,1,1,\tan 45^\circ = 1,\tan 45^\circ = 1
+no_rag,s024,三角函数,两角和公式,medium,已知 sinα=3/5、cosα=4/5，sinβ=5/13、cosβ=12/13，且 α、β 均为锐角，求 sin(α+β)。,scalar,56/65,1,True,True,False,False,correct,1,1,0,0,False,False,False,4606.839800006128,,56/65,56/65,\sin(\alpha+\beta)=56/65,\sin(\alpha+\beta)=56/65
+no_rag,s025,三角函数,两角和公式,medium,已知 sinα=3/5、cosα=4/5，sinβ=5/13、cosβ=12/13，且 α、β 均为锐角，求 cos(α-β)。,scalar,63/65,1,True,True,False,False,correct,1,1,0,0,False,False,False,4068.7236999947345,,63/65,63/65,\cos(\alpha-\beta)=63/65,\cos(\alpha-\beta)=63/65
+no_rag,s026,三角函数,二倍角公式,medium,已知 sin x=3/5、cos x=4/5，求 sin 2x。,scalar,24/25,1,True,True,False,False,correct,1,1,0,0,False,False,False,3978.5972999961814,,24/25,24/25,\sin 2x=24/25,\sin 2x=24/25
+no_rag,s027,三角函数,二倍角公式,medium,已知 sin x=3/5、cos x=4/5，求 cos 2x。,scalar,7/25,1,True,True,False,False,correct,1,1,0,0,False,False,False,4101.540399991791,,7/25,7/25,\cos 2x=7/25,\cos 2x=7/25
+no_rag,s028,三角函数,余弦定理,medium,三角形两边长分别为 3、4，夹角为 90°，求第三边长。,scalar,5,1,True,True,False,False,correct,1,1,0,0,False,False,False,3666.8664000026183,,5,5,第三边长为 5.,第三边长为 5.
+no_rag,s029,三角函数,正弦定理,medium,三角形中 A=30°、B=90°，边 a=5，求边 b。,scalar,10,1,True,True,False,False,correct,1,1,0,0,False,False,False,3859.8766999930376,,10,10,b=10.,b=10.
+no_rag,s030,三角函数,三角形面积,medium,三角形两边长为 6、8，夹角为 30°，求面积。,scalar,12,1,True,True,False,False,correct,1,1,0,0,False,False,False,3489.6962999919197,,12,12,S=12（面积单位）,S=12（面积单位）
+no_rag,s031,数列,等差数列通项,easy,等差数列首项为 3，公差为 4，求第 10 项。,scalar,39,1,True,True,False,False,correct,1,1,0,0,False,False,False,3577.602899997146,,39,39,a = 39,a = 39
+no_rag,s032,数列,等差数列前n项和,medium,等差数列首项为 2，公差为 3，求前 20 项和。,scalar,610,1,True,True,False,False,correct,1,1,0,0,False,False,False,3606.4257999969414,,610,610,S = 610,S = 610
+no_rag,s033,数列,等差数列通项,medium,等差数列 a₁=7，a₁₁=37，求公差 d。,scalar,3,1,True,True,False,False,correct,1,1,0,0,False,False,False,3233.896799996728,,3,3,d = 3,d = 3
+no_rag,s034,数列,等比数列通项,medium,等比数列首项为 2，公比为 3，求第 6 项。,scalar,486,1,True,True,False,False,correct,1,1,0,0,False,False,False,3108.379800003604,,486,486,a = 486,a = 486
+no_rag,s035,数列,等比数列前n项和,medium,等比数列首项为 1，公比为 2，求前 8 项和。,scalar,255,1,True,True,False,False,correct,1,1,0,0,False,False,False,4039.5205999957398,,255,255,S = 255,S = 255
+no_rag,s036,数列,等比数列前n项和,medium,无穷等比数列首项为 6，公比为 1/3，求其和。,scalar,9,1,True,True,False,False,correct,1,1,0,0,False,False,False,3177.3537999979453,,9,9,S = 9,S = 9
+no_rag,s037,数列,递推到通项,medium,数列满足 a₁=5，aₙ₊₁=aₙ+3，求 a₁₅。,scalar,47,1,True,True,False,False,correct,1,1,0,0,False,False,False,3686.1304999911226,,47,47,a=47,a=47
+no_rag,s038,数列,等差数列性质,medium,3、x、11 三个数依次构成等差数列，求 x。,scalar,7,1,True,True,False,False,correct,1,1,0,0,False,False,False,3679.430300006061,,7,7,x = 7,x = 7
+no_rag,s039,数列,等比数列性质,medium,2、x、18 三个正数依次构成等比数列，求 x。,scalar,6,1,True,True,False,False,correct,1,1,0,0,False,False,False,3046.1334999999963,,6,6,x = 6,x = 6
+no_rag,s040,数列,等差数列通项,medium,等差数列首项为 5，公差为 2。第几项等于 31？,scalar,14,1,True,True,False,False,correct,1,1,0,0,False,False,False,3202.5220000068657,,14,14,第 14 项等于 31.,第 14 项等于 31.
+no_rag,s041,概率统计,古典概率,easy,掷一枚公平硬币两次，恰好出现一次正面的概率是多少？,scalar,1/2,1,True,True,False,False,correct,1,1,0,0,False,False,False,2965.4422999883536,,1/2,1/2,1/2（即 (1/2)）,1/2（即 (1/2)）
+no_rag,s042,概率统计,古典概率,easy,掷一枚公平六面骰子一次，点数大于 4 的概率是多少？,scalar,1/3,1,True,True,False,False,correct,1,1,0,0,False,False,False,3560.6357000069693,,1/3,1/3,1/3,1/3
+no_rag,s043,概率统计,古典概率,medium,"从 1,2,3,4,5 中随机等可能选一个数，选到偶数的概率是多少？",scalar,2/5,1,True,True,False,False,correct,1,1,0,0,False,False,False,4028.750700003002,,2/5,2/5,2/5（即 0.4 或 (2/5)）,2/5（即 0.4 或 (2/5)）
+no_rag,s044,概率统计,条件概率,medium,一副牌只考虑数字 1 到 10，每张数字牌各一张。已知抽到的是偶数，抽到大于 6 的数的条件概率是多少？,scalar,2/5,1,True,True,False,False,correct,1,1,0,0,False,False,False,4338.192399998661,,2/5,2/5,"
+\boxed{2/5}
+","
+\boxed{2/5}
+"
+no_rag,s045,概率统计,贝叶斯定理,hard,某病患病率为 1/10。检测对患病者阳性率为 9/10，对未患病者假阳性率为 1/10。若某人检测阳性，求其真正患病的概率。,scalar,1/2,1,True,True,False,False,correct,1,1,0,0,False,False,False,3948.3577000064543,,1/2,1/2,"\boxed{1/2},即检测阳性者真正患病的概率为 1/2（(1/2)）.","\boxed{1/2},即检测阳性者真正患病的概率为 1/2（(1/2)）."
+no_rag,s046,概率统计,全概率公式,medium,机器 A 生产 60% 产品，次品率 2%；机器 B 生产 40% 产品，次品率 5%。随机取一件产品，次品概率是多少？,scalar,4/125,1,True,True,False,False,correct,1,1,0,0,False,False,False,4231.871500000125,,4/125,4/125,"随机取一件产品是次品的概率为 0.032,即 (4/125).","随机取一件产品是次品的概率为 0.032,即 (4/125)."
+no_rag,s047,概率统计,数学期望,medium,随机变量 X 以相同概率取 1、2、3、4，求 E(X)。,scalar,5/2,1,True,True,False,False,correct,1,1,0,0,False,False,False,4069.431200012332,,5/2,5/2,\displaystyle E(X)=5/2,\displaystyle E(X)=5/2
+no_rag,s048,概率统计,方差,medium,随机变量 X 以相同概率取 0 和 2，求 Var(X)。,scalar,1,1,True,True,False,False,correct,1,1,0,0,False,False,False,3345.2180000022054,,1,1,\operatorname{Var}(X)=1,\operatorname{Var}(X)=1
+no_rag,s049,概率统计,古典概率,medium,同时掷两枚公平六面骰子，点数和为 7 的概率是多少？,scalar,1/6,1,True,True,False,False,correct,1,1,0,0,False,False,False,4440.716599987354,,1/6,1/6,1/6,1/6
+no_rag,s050,概率统计,组合概率,medium,袋中有 3 个红球和 2 个蓝球，不放回随机取 2 个，恰好取到 2 个红球的概率是多少？,scalar,3/10,1,True,True,False,False,correct,1,1,0,0,False,False,False,4428.446999998414,,3/10,3/10,"3/10（即 0.3,约 (3/10)）.","3/10（即 0.3,约 (3/10)）."
+no_rag,s051,导数,幂函数求导,medium,f(x)=x³-2x，求 f'(2)。,scalar,10,1,True,True,False,False,correct,1,1,0,0,False,False,False,4357.757699996,,10,10,f'(2)=10,f'(2)=10
+no_rag,s052,导数,幂函数求导,medium,f(x)=5x⁴-3x²+7，求 f'(1)。,scalar,14,1,True,True,False,False,correct,1,1,0,0,False,False,False,2688.2075000030454,,14,14,f'(1)=14,f'(1)=14
+no_rag,s053,导数,链式法则,medium,f(x)=(2x+1)³，求 f'(1)。,scalar,54,1,True,True,False,False,correct,1,1,0,0,False,False,False,3839.3968000018504,,54,54,f'(1)=54,f'(1)=54
+no_rag,s054,导数,乘积法则,medium,f(x)=x²(x+1)，求 f'(2)。,scalar,16,1,True,True,False,False,correct,1,1,0,0,False,False,False,3680.0981999986107,,16,16,f'(2)=16,f'(2)=16
+no_rag,s055,导数,商法则,medium,f(x)=(x+1)/(x+2)，求 f'(0)。,scalar,1/4,1,True,True,False,False,correct,1,1,0,0,False,False,False,3901.3603999919724,,1/4,1/4,f'(0)=1/4,f'(0)=1/4
+no_rag,s056,导数,链式法则,medium,f(x)=(x²+1)²，求 f'(1)。,scalar,8,1,True,True,False,False,correct,1,1,0,0,False,False,False,3131.0306999948807,,8,8,f'(1)=8,f'(1)=8
+no_rag,s057,导数,导数定义,easy,函数 f(x)=x² 在 x=3 处的切线斜率是多少？,scalar,6,1,True,True,False,False,correct,1,1,0,0,False,False,False,2964.0376000024844,,6,6,6,6
+no_rag,s058,导数,乘积法则,medium,f(x)=x·e^x，求 f'(0)。,scalar,1,1,True,True,False,False,correct,1,1,0,0,False,False,False,5044.1222000081325,,1,1,f'(0)=1,f'(0)=1
+no_rag,s059,导数,链式法则,medium,f(x)=sin(2x)，求 f'(0)。,scalar,2,1,True,True,False,False,correct,1,1,0,0,False,False,False,3672.8084000060335,,2,2,f'(0)=2,f'(0)=2
+no_rag,s060,导数,单调性判定,medium,函数 f(x)=x³-3x，在 x=2 处的导数值是多少？,scalar,9,1,True,True,False,False,correct,1,1,0,0,False,False,False,2854.708599988953,,9,9,f'(2)=9.,f'(2)=9.
+no_rag,s061,积分,幂函数积分,easy,计算定积分 ∫₀¹ x² dx。,scalar,1/3,1,True,True,False,False,correct,1,1,0,0,False,False,False,4082.510399995954,,1/3,1/3,"\displaystyle\intx\,dx=1/3","\displaystyle\intx\,dx=1/3"
+no_rag,s062,积分,幂函数积分,easy,计算定积分 ∫₁³ 2x dx。,scalar,8,1,True,True,False,False,correct,1,1,0,0,False,False,False,3598.677400004817,,8,8,"\displaystyle\int 2x\,dx = 8","\displaystyle\int 2x\,dx = 8"
+no_rag,s063,积分,牛顿-莱布尼茨公式,medium,计算定积分 ∫₀² (3x²+1) dx。,scalar,10,1,True,True,False,False,correct,1,1,0,0,False,False,False,3762.2804999991786,,10,10,"\displaystyle\int(3x+1)\,dx = 10","\displaystyle\int(3x+1)\,dx = 10"
+no_rag,s064,积分,换元积分,medium,计算定积分 ∫₀¹ 2x(x²+1) dx。,scalar,3/2,1,True,True,False,False,correct,1,1,0,0,False,False,False,4526.7591000010725,,3/2,3/2,"\displaystyle\intx(x+1)\,dx=3/2","\displaystyle\intx(x+1)\,dx=3/2"
+no_rag,s065,积分,分部积分,medium,计算定积分 ∫₀¹ x e^x dx。,scalar,1,1,True,True,False,False,correct,1,1,0,0,False,False,False,4078.20589999028,,1,1,"\displaystyle\int x e^{x}\,dx = 1.","\displaystyle\int x e^{x}\,dx = 1."
+no_rag,s066,积分,三角函数积分,medium,计算定积分 ∫₀^π sin x dx。,scalar,2,1,True,True,False,False,correct,1,1,0,0,False,False,False,4199.042300009751,,2,2,"\displaystyle\int^{\pi}\sin x\,dx = 2","\displaystyle\int^{\pi}\sin x\,dx = 2"
+no_rag,s067,积分,指数函数积分,hard,计算定积分 ∫₀¹ e^x dx，并给出精确结果中 e 的系数与常数项之和。例如 ae+b 返回 a+b。,scalar,0,1,True,True,False,False,correct,1,1,0,0,False,False,False,3340.243200000259,,0,0,0,0
+no_rag,s068,积分,幂函数积分,medium,计算定积分 ∫₁² 1/x² dx。,scalar,1/2,1,True,True,False,False,correct,1,1,0,0,False,False,False,4409.0751000039745,,1/2,1/2,"\displaystyle\int(1)/(x)\,dx = 1/2","\displaystyle\int(1)/(x)\,dx = 1/2"
+no_rag,s069,积分,牛顿-莱布尼茨公式,medium,若 F'(x)=2x+3，且 F(0)=1，求 F(2)。,scalar,11,1,True,True,False,False,correct,1,1,0,0,False,False,False,3647.1231000032276,,11,11,F(2)=11,F(2)=11
+no_rag,s070,积分,换元积分,medium,计算定积分 ∫₀¹ (1+x)^2 dx。,scalar,7/3,1,True,True,False,False,correct,1,1,0,0,False,False,False,4314.16700000409,,7/3,7/3,"\displaystyle\int(1+x)\,dx = 7/3","\displaystyle\int(1+x)\,dx = 7/3"
+no_rag,s071,平面几何,勾股定理,easy,直角三角形两直角边长为 6 和 8，求斜边长。,scalar,10,1,True,True,False,False,correct,1,1,0,0,False,False,False,2721.5808000037214,,10,10,斜边长为 10.,斜边长为 10.
+no_rag,s072,平面几何,三角形面积,easy,三角形底为 10，高为 6，求面积。,scalar,30,1,True,True,False,False,correct,1,1,0,0,False,False,False,3623.690499996883,,30,30,S = 30（平方单位）,S = 30（平方单位）
+no_rag,s073,平面几何,圆面积,medium,圆的半径为 3。若圆面积写成 kπ，求 k。,scalar,9,1,True,True,False,False,correct,1,1,0,0,False,False,False,3241.3452999899164,,9,9,k = 9,k = 9
+no_rag,s074,平面几何,圆周长,medium,圆的半径为 4。若周长写成 kπ，求 k。,scalar,8,1,True,True,False,False,correct,1,1,0,0,False,False,False,3071.5441000065766,,8,8,k = 8,k = 8
+no_rag,s075,平面几何,相似三角形,medium,两个相似三角形对应边之比为 2:3，小三角形面积为 20，求大三角形面积。,scalar,45,1,True,True,False,False,correct,1,1,0,0,False,False,False,3170.070799998939,,45,45,45,45
+no_rag,s076,平面几何,圆周角定理,medium,某圆心角为 100°，同弧所对的圆周角是多少度？,scalar,50,1,True,True,False,False,correct,1,1,0,0,False,False,False,3398.562900008983,,50,50,50^\circ,50^\circ
+no_rag,s077,平面几何,切线与半径,medium,圆在 P 点的切线与半径 OP 的夹角是多少度？,scalar,90,1,True,True,False,False,correct,1,1,0,0,False,False,False,3929.9170000012964,,90,90,\boxed{90^\circ},\boxed{90^\circ}
+no_rag,s078,平面几何,坐标距离,medium,"平面上两点 A(1,2)、B(4,6) 的距离是多少？",scalar,5,1,True,True,False,False,correct,1,1,0,0,False,False,False,3551.654499999131,,5,5,|AB|=5（单位长度）.,|AB|=5（单位长度）.
+no_rag,s079,平面几何,中点坐标,medium,"线段端点 A(2,4)、B(8,10)，中点的横坐标是多少？",scalar,5,1,True,True,False,False,correct,1,1,0,0,False,False,False,2732.8936999983853,,5,5,中点横坐标为 5.,中点横坐标为 5.
+no_rag,s080,平面几何,三角形面积,medium,边长为 5、12、13 的三角形面积是多少？,scalar,30,1,True,True,False,False,correct,1,1,0,0,False,False,False,2798.856600013096,,30,30,该三角形的面积为 30.,该三角形的面积为 30.
+no_rag,s081,向量,向量模长,easy,"二维向量 a=(3,4) 的模长是多少？",scalar,5,1,True,True,False,False,correct,1,1,0,0,False,False,False,3457.399999999325,,5,5,|\mathbf{a}|=5.,|\mathbf{a}|=5.
+no_rag,s082,向量,向量点积,easy,"a=(1,2)，b=(3,4)，求 a·b。",scalar,11,1,True,True,False,False,correct,1,1,0,0,False,False,False,2982.0384999911766,,11,11,\mathbf{a}\cdot\mathbf{b}=11.,\mathbf{a}\cdot\mathbf{b}=11.
+no_rag,s083,向量,向量点积,medium,"a=(2,-1)，b=(4,3)，求 a·b。",scalar,5,1,True,True,False,False,correct,1,1,0,0,False,False,False,3215.3143000032287,,5,5,\mathbf{a}\cdot\mathbf{b}=5,\mathbf{a}\cdot\mathbf{b}=5
+no_rag,s084,向量,夹角余弦,medium,"a=(1,0)，b=(1,1)。若 cosθ 写成 √2/k，求 k。",scalar,2,1,True,True,False,False,correct,1,1,0,0,False,False,False,3830.7683000020916,,2,2,k=2,k=2
+no_rag,s085,向量,垂直条件,medium,"向量 a=(2,3)，b=(x,-2) 且 a⊥b，求 x。",scalar,3,1,True,True,False,False,correct,1,1,0,0,False,False,False,3642.9644000018016,,3,3,x=3,x=3
+no_rag,s086,向量,坐标线性运算,medium,"a=(2,5)，b=(1,3)，求向量 2a-b 的两个坐标之和。",scalar,10,1,True,True,False,False,correct,1,1,0,0,False,False,False,3033.2063999958336,,10,10,10,10
+no_rag,s087,向量,向量模长,medium,"向量 a=(6,8)，求单位向量 a/|a| 的两个坐标之和。",scalar,7/5,1,True,True,False,False,correct,1,1,0,0,False,False,False,3034.3828999903053,,7/5,7/5,1.4（即 7/5）,1.4（即 7/5）
+no_rag,s088,向量,向量点积,medium,"a=(1,2,3)，b=(4,0,-1)，求 a·b。",scalar,1,1,True,True,False,False,correct,1,1,0,0,False,False,False,3369.163399998797,,1,1,\mathbf{a}\cdot\mathbf{b}=1,\mathbf{a}\cdot\mathbf{b}=1
+no_rag,s089,向量,夹角余弦,medium,两个单位向量的点积为 1/2，求它们夹角的度数。,scalar,60,1,True,True,False,False,correct,1,1,0,0,False,False,False,3543.4431999892695,,60,60,\boxed{60^\circ},\boxed{60^\circ}
+no_rag,s090,向量,坐标线性运算,medium,"a=(3,-2)，b=(-1,4)，求 a+b 的两个坐标之积。",scalar,4,1,True,True,False,False,correct,1,1,0,0,False,False,False,2834.472200003802,,4,4,4,4
+no_rag,s091,排列组合,排列数,easy,5 个不同元素中任选 3 个并排列，有多少种不同排列？,scalar,60,1,True,True,False,False,correct,1,1,0,0,False,False,False,3076.890900003491,,60,60,60 种不同排列.,60 种不同排列.
+no_rag,s092,排列组合,组合数,easy,从 8 个不同元素中选 3 个，不考虑顺序，有多少种选法？,scalar,56,1,True,True,False,False,correct,1,1,0,0,False,False,False,3969.2060999950627,,56,56,\boxed{56} 种选法.,\boxed{56} 种选法.
+no_rag,s093,排列组合,乘法原理,easy,有 3 件上衣和 4 条裤子，每次选一件上衣和一条裤子，共有多少种搭配？,scalar,12,1,True,True,False,False,correct,1,1,0,0,False,False,False,3073.953500002972,,12,12,共有 12 种搭配.,共有 12 种搭配.
+no_rag,s094,排列组合,加法原理,easy,从 5 本数学书或 7 本物理书中任选一本，共有多少种选法？,scalar,12,1,True,True,False,False,correct,1,1,0,0,False,False,False,3777.4886999977753,,12,12,共有 12 种选法.,共有 12 种选法.
+no_rag,s095,排列组合,组合数,medium,10 人中选 2 人组成一个不区分职位的小组，有多少种选法？,scalar,45,1,True,True,False,False,correct,1,1,0,0,False,False,False,3648.476300004404,,45,45,\boxed{45} 种选法.,\boxed{45} 种选法.
+no_rag,s096,排列组合,排列数,medium,用数字 1、2、3、4 组成无重复数字的三位数，共有多少个？,scalar,24,1,True,True,False,False,correct,1,1,0,0,False,False,False,3707.4328000016976,,24,24,\boxed{24} 个.,\boxed{24} 个.
+no_rag,s097,排列组合,组合概率,medium,从 6 人中选 3 人，其中指定的甲必须入选，有多少种选法？,scalar,10,1,True,True,False,False,correct,1,1,0,0,False,False,False,3089.268199997605,,10,10,\boxed{10} 种选法.,\boxed{10} 种选法.
+no_rag,s098,排列组合,二项式定理,medium,(x+1)^5 展开式中 x² 的系数是多少？,scalar,10,1,True,True,False,False,correct,1,1,0,0,False,False,False,2694.2097999999532,,10,10,(x+1) 展开式中 x 的系数是 \boxed{10}.,(x+1) 展开式中 x 的系数是 \boxed{10}.
+no_rag,s099,排列组合,排列限制,medium,4 个不同的人排成一排，甲必须站在最左端，共有多少种排法？,scalar,6,1,True,True,False,False,correct,1,1,0,0,False,False,False,3201.9853000092553,,6,6,\boxed{6} 种排法.,\boxed{6} 种排法.
+no_rag,s100,排列组合,组合限制,medium,7 人中选 3 人，甲和乙不能同时入选，共有多少种选法？,scalar,30,1,True,True,False,False,correct,1,1,0,0,False,False,False,4746.730800005025,,30,30,共有 30 种选法.,共有 30 种选法.
+rag,s001,二次函数,求根公式,easy,解方程 x²-5x+6=0，求全部实数解。,set,"[""2"", ""3""]",1,True,True,False,False,correct,1,1,0,0,True,False,False,6884.839899998042,,"[""2"", ""3""]","[""2"", ""3""]","x=2,\ x=3.","x=2,\ x=3."
+rag,s002,二次函数,求根公式,easy,解方程 x²-9=0，求全部实数解。,set,"[""-3"", ""3""]",1,True,True,False,False,correct,1,1,0,0,True,False,False,6337.849400006235,,"[""-3"", ""3""]","[""-3"", ""3""]","x=3,\ x=-3（即 x=\pm 3）","x=3,\ x=-3（即 x=\pm 3）"
+rag,s003,二次函数,求根公式,medium,解方程 2x²-7x+3=0，求全部实数解。,set,"[""1/2"", ""3""]",1,True,True,False,False,correct,1,1,0,0,True,False,False,8298.66359999869,,"[""1/2"", ""3""]","[""1/2"", ""3""]","x=3,\quad x=1/2.","x=3,\quad x=1/2."
+rag,s004,二次函数,顶点横坐标与对称轴,easy,二次函数 y=2x²-8x+3 的顶点横坐标是多少？,scalar,2,1,True,True,False,False,correct,1,1,0,0,True,False,False,4476.238100003684,,2,2,顶点横坐标为 x=2.,顶点横坐标为 x=2.
+rag,s005,二次函数,配方法与最值,medium,求二次函数 y=x²-6x+11 的最小值。,scalar,2,1,True,True,False,False,correct,1,1,0,0,True,False,False,5593.559300003108,,2,2,最小值为 2（在 x=3 处取得）.,最小值为 2（在 x=3 处取得）.
+rag,s006,二次函数,韦达定理,medium,方程 3x²-5x-2=0 的两根之和是多少？,scalar,5/3,1,True,True,False,False,correct,1,1,0,0,True,False,False,6768.642900002305,,5/3,5/3,\boxed{5/3},\boxed{5/3}
+rag,s007,二次函数,韦达定理,medium,方程 4x²+7x-3=0 的两根之积是多少？,scalar,-3/4,1,True,True,False,False,correct,1,1,0,0,True,False,False,8273.442999998224,,-3/4,-3/4,-3/4,-3/4
+rag,s008,二次函数,判别式与实根个数,medium,若方程 x²-4x+k=0 有两个相等的实根，求 k。,scalar,4,1,True,True,False,False,correct,1,1,0,0,True,False,False,5842.296999995597,,4,4,k=4,k=4
+rag,s009,二次函数,求根公式,medium,方程 x²+x-6=0 的正根是多少？,scalar,2,1,True,True,False,False,correct,1,1,0,0,True,False,False,5399.0141999966,,2,2,x=2,x=2
+rag,s010,二次函数,求根公式,easy,解方程 (x-1)(x+4)=0，求全部实数解。,set,"[""-4"", ""1""]",1,True,True,False,False,correct,1,1,0,0,True,False,False,6378.529199995683,,"[""-4"", ""1""]","[""-4"", ""1""]","x=1,x=-4.","x=1,x=-4."
+rag,s011,方程与不等式,绝对值方程,medium,解方程 |2x-3|=5，求全部实数解。,set,"[""-1"", ""4""]",1,True,True,False,False,correct,1,1,0,0,True,False,False,11834.57210000779,,"[""-1"", ""4""]","[""-1"", ""4""]","x=4 或 x=-1,即解集为 \{-1,\ 4\}.","x=4 或 x=-1,即解集为 \{-1,\ 4\}."
+rag,s012,方程与不等式,线性方程组,easy,已知 x+y=7，x-y=1，求 x。,scalar,4,1,True,True,False,False,correct,1,1,0,0,True,False,False,6714.613100004499,,4,4,x=4,x=4
+rag,s013,方程与不等式,分式方程,medium,解方程 1/(x-1)=2，求 x。,scalar,3/2,1,True,True,False,False,correct,1,1,0,0,True,False,False,6761.919799988391,,3/2,3/2,x=3/2,x=3/2
+rag,s014,方程与不等式,根式方程,medium,解方程 √(x+1)=3，求 x。,scalar,8,1,True,True,False,False,correct,1,1,0,0,True,False,False,5884.031699999468,,8,8,x=8,x=8
+rag,s015,方程与不等式,一元一次不等式,easy,满足 3x-5>7 的最小整数 x 是多少？,scalar,5,1,True,True,False,False,correct,1,1,0,0,True,False,False,4405.45320000092,,5,5,\boxed{5},\boxed{5}
+rag,s016,方程与不等式,基本不等式,medium,当 x>0 时，x+9/x 的最小值是多少？,scalar,6,2,False,True,True,False,correct,2,2,0,0,False,False,False,6132.2132000059355,,,6,,"当   时,x+(9)/(x) 的最小值为 6,在 x=3 时取得."
+rag,s017,方程与不等式,柯西不等式,medium,"实数 x,y 满足 x+y=10，求 x²+y² 的最小值。",scalar,50,1,True,True,False,False,correct,1,1,0,0,True,False,False,10098.630599997705,,50,50,\boxed{50}（当 x=y=5 时取得）,\boxed{50}（当 x=y=5 时取得）
+rag,s018,方程与不等式,线性方程组,medium,已知 2x+3y=13，x-y=1，求 y。,scalar,11/5,1,True,True,False,False,correct,1,1,0,0,True,False,False,6122.666299997945,,11/5,11/5,y=11/5（即 y=2.2）.,y=11/5（即 y=2.2）.
+rag,s019,方程与不等式,绝对值不等式,medium,满足 |x-2|<3 的整数 x 一共有多少个？,scalar,5,1,True,True,False,False,correct,1,1,0,0,True,False,False,10158.651799996733,,5,5,满足 |x-2|<3 的整数 x 一共有 \boxed{5} 个.,满足 |x-2|<3 的整数 x 一共有 \boxed{5} 个.
+rag,s020,方程与不等式,二次不等式符号,medium,满足 x²-5x+6≤0 的整数 x 一共有多少个？,scalar,2,1,True,True,False,False,correct,1,1,0,0,True,False,False,4345.389299996896,,2,2,满足条件的整数 x 一共有 \boxed{2} 个.,满足条件的整数 x 一共有 \boxed{2} 个.
+rag,s021,三角函数,同角基本关系,easy,sin 30° 的值是多少？,scalar,1/2,1,True,True,False,False,correct,1,1,0,0,True,False,False,5234.586799997487,,1/2,1/2,\sin 30^\circ = 1/2,\sin 30^\circ = 1/2
+rag,s022,三角函数,同角基本关系,easy,cos 60° 的值是多少？,scalar,1/2,1,True,True,False,False,correct,1,1,0,0,True,False,False,8358.665399995516,,1/2,1/2,\cos 60^\circ=1/2,\cos 60^\circ=1/2
+rag,s023,三角函数,同角基本关系,easy,tan 45° 的值是多少？,scalar,1,1,True,True,False,False,correct,1,1,0,0,True,False,False,5243.855699998676,,1,1,\tan 45^\circ=1.,\tan 45^\circ=1.
+rag,s024,三角函数,两角和公式,medium,已知 sinα=3/5、cosα=4/5，sinβ=5/13、cosβ=12/13，且 α、β 均为锐角，求 sin(α+β)。,scalar,56/65,1,True,True,False,False,correct,1,1,0,0,True,False,False,6347.028600008343,,56/65,56/65,\sin(\alpha+\beta)=56/65,\sin(\alpha+\beta)=56/65
+rag,s025,三角函数,两角和公式,medium,已知 sinα=3/5、cosα=4/5，sinβ=5/13、cosβ=12/13，且 α、β 均为锐角，求 cos(α-β)。,scalar,63/65,1,True,True,False,False,correct,1,1,0,0,True,False,False,10109.040600000299,,63/65,63/65,\cos(\alpha-\beta)=63/65,\cos(\alpha-\beta)=63/65
+rag,s026,三角函数,二倍角公式,medium,已知 sin x=3/5、cos x=4/5，求 sin 2x。,scalar,24/25,1,True,True,False,False,correct,1,1,0,0,True,False,False,5844.420499997796,,24/25,24/25,\sin 2x=24/25,\sin 2x=24/25
+rag,s027,三角函数,二倍角公式,medium,已知 sin x=3/5、cos x=4/5，求 cos 2x。,scalar,7/25,1,True,True,False,False,correct,1,1,0,0,True,False,False,6230.584799995995,,7/25,7/25,\cos 2x=7/25,\cos 2x=7/25
+rag,s028,三角函数,余弦定理,medium,三角形两边长分别为 3、4，夹角为 90°，求第三边长。,scalar,5,1,True,True,False,False,correct,1,1,0,0,True,False,False,4696.544899998116,,5,5,第三边长为 5.,第三边长为 5.
+rag,s029,三角函数,正弦定理,medium,三角形中 A=30°、B=90°，边 a=5，求边 b。,scalar,10,1,True,True,False,False,correct,1,1,0,0,True,False,False,5797.501299995929,,10,10,b=10.,b=10.
+rag,s030,三角函数,三角形面积,medium,三角形两边长为 6、8，夹角为 30°，求面积。,scalar,12,1,True,True,False,False,correct,1,1,0,0,True,False,False,8162.608600003296,,12,12,S=12（面积单位）.,S=12（面积单位）.
+rag,s031,数列,等差数列通项,easy,等差数列首项为 3，公差为 4，求第 10 项。,scalar,39,1,True,True,False,False,correct,1,1,0,0,True,False,False,4676.915600008215,,39,39,a = 39,a = 39
+rag,s032,数列,等差数列前n项和,medium,等差数列首项为 2，公差为 3，求前 20 项和。,scalar,610,1,True,True,False,False,correct,1,1,0,0,True,False,False,5063.023700000485,,610,610,S = 610,S = 610
+rag,s033,数列,等差数列通项,medium,等差数列 a₁=7，a₁₁=37，求公差 d。,scalar,3,1,True,True,False,False,correct,1,1,0,0,True,False,False,4392.171800005599,,3,3,d = 3.,d = 3.
+rag,s034,数列,等比数列通项,medium,等比数列首项为 2，公比为 3，求第 6 项。,scalar,486,1,True,True,False,False,correct,1,1,0,0,True,False,False,4594.763600005535,,486,486,a = 486,a = 486
+rag,s035,数列,等比数列前n项和,medium,等比数列首项为 1，公比为 2，求前 8 项和。,scalar,255,1,True,True,False,False,correct,1,1,0,0,True,False,False,8118.631200006348,,255,255,S = 255,S = 255
+rag,s036,数列,等比数列前n项和,medium,无穷等比数列首项为 6，公比为 1/3，求其和。,scalar,9,1,True,True,False,False,correct,1,1,0,0,True,False,False,5898.7264999886975,,9,9,S = 9.,S = 9.
+rag,s037,数列,递推到通项,medium,数列满足 a₁=5，aₙ₊₁=aₙ+3，求 a₁₅。,scalar,47,1,True,True,False,False,correct,1,1,0,0,True,False,False,4210.113199995249,,47,47,a=47.,a=47.
+rag,s038,数列,等差数列性质,medium,3、x、11 三个数依次构成等差数列，求 x。,scalar,7,1,True,True,False,False,correct,1,1,0,0,True,False,False,8092.330800005584,,7,7,x=7,x=7
+rag,s039,数列,等比数列性质,medium,2、x、18 三个正数依次构成等比数列，求 x。,scalar,6,1,True,True,False,False,correct,1,1,0,0,True,False,False,3830.9541000053287,,6,6,x=6,x=6
+rag,s040,数列,等差数列通项,medium,等差数列首项为 5，公差为 2。第几项等于 31？,scalar,14,1,True,True,False,False,correct,1,1,0,0,True,False,False,5161.775400003535,,14,14,第 14 项等于 31.,第 14 项等于 31.
+rag,s041,概率统计,古典概率,easy,掷一枚公平硬币两次，恰好出现一次正面的概率是多少？,scalar,1/2,1,True,True,False,False,correct,1,1,0,0,True,False,False,8342.069700011052,,1/2,1/2,\boxed{1/2},\boxed{1/2}
+rag,s042,概率统计,古典概率,easy,掷一枚公平六面骰子一次，点数大于 4 的概率是多少？,scalar,1/3,1,True,True,False,False,correct,1,1,0,0,True,False,False,5452.381199997035,,1/3,1/3,1/3,1/3
+rag,s043,概率统计,古典概率,medium,"从 1,2,3,4,5 中随机等可能选一个数，选到偶数的概率是多少？",scalar,2/5,1,True,True,False,False,correct,1,1,0,0,True,False,False,4366.821400006302,,2/5,2/5,\boxed{2/5},\boxed{2/5}
+rag,s044,概率统计,条件概率,medium,一副牌只考虑数字 1 到 10，每张数字牌各一张。已知抽到的是偶数，抽到大于 6 的数的条件概率是多少？,scalar,2/5,1,True,True,False,False,correct,1,1,0,0,True,False,False,6423.099000006914,,2/5,2/5,\boxed{2/5},\boxed{2/5}
+rag,s045,概率统计,贝叶斯定理,hard,某病患病率为 1/10。检测对患病者阳性率为 9/10，对未患病者假阳性率为 1/10。若某人检测阳性，求其真正患病的概率。,scalar,1/2,1,True,True,False,False,correct,1,1,0,0,True,False,False,24071.916800006875,,1/2,1/2,"
+\boxed{P(A\mid B)=1/2}
+","
+\boxed{P(A\mid B)=1/2}
+"
+rag,s046,概率统计,全概率公式,medium,机器 A 生产 60% 产品，次品率 2%；机器 B 生产 40% 产品，次品率 5%。随机取一件产品，次品概率是多少？,scalar,4/125,1,True,True,False,False,correct,1,1,0,0,True,False,False,8470.50599999784,,4/125,4/125,"P(D)=0.032,即随机取一件产品为次品的概率是 (4/125).","P(D)=0.032,即随机取一件产品为次品的概率是 (4/125)."
+rag,s047,概率统计,数学期望,medium,随机变量 X 以相同概率取 1、2、3、4，求 E(X)。,scalar,5/2,1,True,True,False,False,correct,1,1,0,0,True,False,False,4714.363200007938,,5/2,5/2,\boxed{E(X)=5/2},\boxed{E(X)=5/2}
+rag,s048,概率统计,方差,medium,随机变量 X 以相同概率取 0 和 2，求 Var(X)。,scalar,1,1,True,True,False,False,correct,1,1,0,0,True,False,False,5739.5742000080645,,1,1,\operatorname{Var}(X)=1,\operatorname{Var}(X)=1
+rag,s049,概率统计,古典概率,medium,同时掷两枚公平六面骰子，点数和为 7 的概率是多少？,scalar,1/6,1,True,True,False,False,correct,1,1,0,0,True,False,False,7287.017599999672,,1/6,1/6,1/6,1/6
+rag,s050,概率统计,组合概率,medium,袋中有 3 个红球和 2 个蓝球，不放回随机取 2 个，恰好取到 2 个红球的概率是多少？,scalar,3/10,1,True,True,False,False,correct,1,1,0,0,True,False,False,7448.096799998893,,3/10,3/10,"3/10（即 0.3,约 (3/10)）","3/10（即 0.3,约 (3/10)）"
+rag,s051,导数,幂函数求导,medium,f(x)=x³-2x，求 f'(2)。,scalar,10,1,True,True,False,False,correct,1,1,0,0,True,False,False,5312.503299996024,,10,10,f'(2)=10,f'(2)=10
+rag,s052,导数,幂函数求导,medium,f(x)=5x⁴-3x²+7，求 f'(1)。,scalar,14,1,True,True,False,False,correct,1,1,0,0,True,False,False,3387.284099997487,,14,14,f'(1)=14,f'(1)=14
+rag,s053,导数,链式法则,medium,f(x)=(2x+1)³，求 f'(1)。,scalar,54,1,True,True,False,False,correct,1,1,0,0,True,False,False,8098.757900006603,,54,54,f'(1)=54,f'(1)=54
+rag,s054,导数,乘积法则,medium,f(x)=x²(x+1)，求 f'(2)。,scalar,16,1,True,True,False,False,correct,1,1,0,0,True,False,False,7301.25119999866,,16,16,f'(2)=16,f'(2)=16
+rag,s055,导数,商法则,medium,f(x)=(x+1)/(x+2)，求 f'(0)。,scalar,1/4,1,True,True,False,False,correct,1,1,0,0,True,False,False,6221.0407000093255,,1/4,1/4,f'(0)=1/4,f'(0)=1/4
+rag,s056,导数,链式法则,medium,f(x)=(x²+1)²，求 f'(1)。,scalar,8,1,True,True,False,False,correct,1,1,0,0,True,False,False,6411.616400000639,,8,8,f'(1)=8,f'(1)=8
+rag,s057,导数,导数定义,easy,函数 f(x)=x² 在 x=3 处的切线斜率是多少？,scalar,6,1,True,True,False,False,correct,1,1,0,0,True,False,False,5322.482899995521,,6,6,6,6
+rag,s058,导数,乘积法则,medium,f(x)=x·e^x，求 f'(0)。,scalar,1,1,True,True,False,False,correct,1,1,0,0,True,False,False,5380.959300004179,,1,1,f'(0)=1,f'(0)=1
+rag,s059,导数,链式法则,medium,f(x)=sin(2x)，求 f'(0)。,scalar,2,1,True,True,False,False,correct,1,1,0,0,True,False,False,7300.778999997419,,2,2,f'(0)=2.,f'(0)=2.
+rag,s060,导数,单调性判定,medium,函数 f(x)=x³-3x，在 x=2 处的导数值是多少？,scalar,9,1,True,True,False,False,correct,1,1,0,0,True,False,False,5859.433199992054,,9,9,f'(2)=9,f'(2)=9
+rag,s061,积分,幂函数积分,easy,计算定积分 ∫₀¹ x² dx。,scalar,1/3,1,True,True,False,False,correct,1,1,0,0,True,False,False,5493.819400013308,,1/3,1/3,"\displaystyle\intx\,dx=1/3","\displaystyle\intx\,dx=1/3"
+rag,s062,积分,幂函数积分,easy,计算定积分 ∫₁³ 2x dx。,scalar,8,1,True,True,False,False,correct,1,1,0,0,True,False,False,5975.793100005831,,8,8,"\displaystyle\int 2x\,dx = 8","\displaystyle\int 2x\,dx = 8"
+rag,s063,积分,牛顿-莱布尼茨公式,medium,计算定积分 ∫₀² (3x²+1) dx。,scalar,10,1,True,True,False,False,correct,1,1,0,0,True,False,False,8973.533900003531,,10,10,"\displaystyle\int(3x+1)\,dx = 10","\displaystyle\int(3x+1)\,dx = 10"
+rag,s064,积分,换元积分,medium,计算定积分 ∫₀¹ 2x(x²+1) dx。,scalar,3/2,1,True,True,False,False,correct,1,1,0,0,True,False,False,8480.832200002624,,3/2,3/2,"\displaystyle\intx(x+1)\,dx=3/2.","\displaystyle\intx(x+1)\,dx=3/2."
+rag,s065,积分,分部积分,medium,计算定积分 ∫₀¹ x e^x dx。,scalar,1,1,True,True,False,False,correct,1,1,0,0,True,False,False,7712.39840000635,,1,1,"
+\boxed{\int x e^{x}\,dx = 1}
+","
+\boxed{\int x e^{x}\,dx = 1}
+"
+rag,s066,积分,三角函数积分,medium,计算定积分 ∫₀^π sin x dx。,scalar,2,1,True,True,False,False,correct,1,1,0,0,True,False,False,6194.571900006849,,2,2,"\displaystyle\int^{\pi}\sin x\,dx=2","\displaystyle\int^{\pi}\sin x\,dx=2"
+rag,s067,积分,指数函数积分,hard,计算定积分 ∫₀¹ e^x dx，并给出精确结果中 e 的系数与常数项之和。例如 ae+b 返回 a+b。,scalar,0,1,True,True,False,False,correct,1,1,0,0,True,False,False,8381.635500001721,,0,0,"\inte^x\,dx=e-1,且 e 的系数与常数项之和为 0.","\inte^x\,dx=e-1,且 e 的系数与常数项之和为 0."
+rag,s068,积分,幂函数积分,medium,计算定积分 ∫₁² 1/x² dx。,scalar,1/2,1,True,True,False,False,correct,1,1,0,0,True,False,False,6405.33090000099,,1/2,1/2,"\displaystyle\int\frac{1}{x}\,dx=1/2","\displaystyle\int\frac{1}{x}\,dx=1/2"
+rag,s069,积分,牛顿-莱布尼茨公式,medium,若 F'(x)=2x+3，且 F(0)=1，求 F(2)。,scalar,11,1,True,True,False,False,correct,1,1,0,0,True,False,False,5405.859699996654,,11,11,F(2)=11,F(2)=11
+rag,s070,积分,换元积分,medium,计算定积分 ∫₀¹ (1+x)^2 dx。,scalar,7/3,1,True,True,False,False,correct,1,1,0,0,True,False,False,8510.519899995415,,7/3,7/3,"\displaystyle\int(1+x)\,dx=7/3","\displaystyle\int(1+x)\,dx=7/3"
+rag,s071,平面几何,勾股定理,easy,直角三角形两直角边长为 6 和 8，求斜边长。,scalar,10,1,True,True,False,False,correct,1,1,0,0,True,False,False,4264.883399999235,,10,10,斜边长为 10.,斜边长为 10.
+rag,s072,平面几何,三角形面积,easy,三角形底为 10，高为 6，求面积。,scalar,30,1,True,True,False,False,correct,1,1,0,0,True,False,False,5250.319600003422,,30,30,S = 30（面积单位）.,S = 30（面积单位）.
+rag,s073,平面几何,圆面积,medium,圆的半径为 3。若圆面积写成 kπ，求 k。,scalar,9,1,True,True,False,False,correct,1,1,0,0,True,False,False,4758.129699999699,,9,9,k = 9,k = 9
+rag,s074,平面几何,圆周长,medium,圆的半径为 4。若周长写成 kπ，求 k。,scalar,8,1,True,True,False,False,correct,1,1,0,0,True,False,False,4983.174500011955,,8,8,k = 8,k = 8
+rag,s075,平面几何,相似三角形,medium,两个相似三角形对应边之比为 2:3，小三角形面积为 20，求大三角形面积。,scalar,45,1,True,True,False,False,correct,1,1,0,0,True,False,False,4425.553399996716,,45,45,45（面积单位）,45（面积单位）
+rag,s076,平面几何,圆周角定理,medium,某圆心角为 100°，同弧所对的圆周角是多少度？,scalar,50,1,True,True,False,False,correct,1,1,0,0,True,False,False,4777.9252999898745,,50,50,50^\circ,50^\circ
+rag,s077,平面几何,切线与半径,medium,圆在 P 点的切线与半径 OP 的夹角是多少度？,scalar,90,1,True,True,False,False,correct,1,1,0,0,True,False,False,4368.98120000842,,90,90,90^\circ（即切线与半径互相垂直）,90^\circ（即切线与半径互相垂直）
+rag,s078,平面几何,坐标距离,medium,"平面上两点 A(1,2)、B(4,6) 的距离是多少？",scalar,5,1,True,True,False,False,correct,1,1,0,0,True,False,False,5344.774099998176,,5,5,|AB|=5.,|AB|=5.
+rag,s079,平面几何,中点坐标,medium,"线段端点 A(2,4)、B(8,10)，中点的横坐标是多少？",scalar,5,1,True,True,False,False,correct,1,1,0,0,True,False,False,4355.097099993145,,5,5,中点横坐标为 5.,中点横坐标为 5.
+rag,s080,平面几何,三角形面积,medium,边长为 5、12、13 的三角形面积是多少？,scalar,30,1,True,True,False,False,correct,1,1,0,0,True,False,False,4624.490899994271,,30,30,30（平方单位）.,30（平方单位）.
+rag,s081,向量,向量模长,easy,"二维向量 a=(3,4) 的模长是多少？",scalar,5,1,True,True,False,False,correct,1,1,0,0,True,False,False,3676.4589000085834,,5,5,|\mathbf{a}|=5,|\mathbf{a}|=5
+rag,s082,向量,向量点积,easy,"a=(1,2)，b=(3,4)，求 a·b。",scalar,11,1,True,True,False,False,correct,1,1,0,0,True,False,False,6081.021099991631,,11,11,\mathbf{a}\cdot\mathbf{b}=11,\mathbf{a}\cdot\mathbf{b}=11
+rag,s083,向量,向量点积,medium,"a=(2,-1)，b=(4,3)，求 a·b。",scalar,5,1,True,True,False,False,correct,1,1,0,0,True,False,False,7401.7774000094505,,5,5,\mathbf{a}\cdot\mathbf{b}=5,\mathbf{a}\cdot\mathbf{b}=5
+rag,s084,向量,夹角余弦,medium,"a=(1,0)，b=(1,1)。若 cosθ 写成 √2/k，求 k。",scalar,2,1,True,True,False,False,correct,1,1,0,0,True,False,False,8434.490899991943,,2,2,k=2,k=2
+rag,s085,向量,垂直条件,medium,"向量 a=(2,3)，b=(x,-2) 且 a⊥b，求 x。",scalar,3,1,True,True,False,False,correct,1,1,0,0,True,False,False,6637.849200007622,,3,3,x=3,x=3
+rag,s086,向量,坐标线性运算,medium,"a=(2,5)，b=(1,3)，求向量 2a-b 的两个坐标之和。",scalar,10,1,True,True,False,False,correct,1,1,0,0,True,False,False,4445.019399994635,,10,10,"2\mathbf{a}-\mathbf{b}=(3,7),其两个坐标之和为 \boxed{10}.","2\mathbf{a}-\mathbf{b}=(3,7),其两个坐标之和为 \boxed{10}."
+rag,s087,向量,向量模长,medium,"向量 a=(6,8)，求单位向量 a/|a| 的两个坐标之和。",scalar,7/5,1,True,True,False,False,correct,1,1,0,0,True,False,False,4650.5682000133675,,7/5,7/5,6/10+8/10=14/10=1.4,6/10+8/10=14/10=1.4
+rag,s088,向量,向量点积,medium,"a=(1,2,3)，b=(4,0,-1)，求 a·b。",scalar,1,1,True,True,False,False,correct,1,1,0,0,True,False,False,5923.200499993982,,1,1,\mathbf{a}\cdot\mathbf{b}=1,\mathbf{a}\cdot\mathbf{b}=1
+rag,s089,向量,夹角余弦,medium,两个单位向量的点积为 1/2，求它们夹角的度数。,scalar,60,1,True,True,False,False,correct,1,1,0,0,True,False,False,8059.695099989767,,60,60,\theta = 60^\circ,\theta = 60^\circ
+rag,s090,向量,坐标线性运算,medium,"a=(3,-2)，b=(-1,4)，求 a+b 的两个坐标之积。",scalar,4,1,True,True,False,False,correct,1,1,0,0,True,False,False,5543.285899999319,,4,4,"\mathbf{a}+\mathbf{b}=(2,2),其两个坐标之积为 4.","\mathbf{a}+\mathbf{b}=(2,2),其两个坐标之积为 4."
+rag,s091,排列组合,排列数,easy,5 个不同元素中任选 3 个并排列，有多少种不同排列？,scalar,60,1,True,True,False,False,correct,1,1,0,0,True,False,False,8336.16130000155,,60,60,"A(5,3)=60 种.","A(5,3)=60 种."
+rag,s092,排列组合,组合数,easy,从 8 个不同元素中选 3 个，不考虑顺序，有多少种选法？,scalar,56,1,True,True,False,False,correct,1,1,0,0,True,False,False,6165.977500000736,,56,56,"C(8,3)=56 种选法.","C(8,3)=56 种选法."
+rag,s093,排列组合,乘法原理,easy,有 3 件上衣和 4 条裤子，每次选一件上衣和一条裤子，共有多少种搭配？,scalar,12,1,True,True,False,False,correct,1,1,0,0,True,False,False,6351.127999994787,,12,12,共有 12 种搭配.,共有 12 种搭配.
+rag,s094,排列组合,加法原理,easy,从 5 本数学书或 7 本物理书中任选一本，共有多少种选法？,scalar,12,1,True,True,False,False,correct,1,1,0,0,True,False,False,7460.912900001858,,12,12,5 + 7 = 12 种选法.,5 + 7 = 12 种选法.
+rag,s095,排列组合,组合数,medium,10 人中选 2 人组成一个不区分职位的小组，有多少种选法？,scalar,45,1,True,True,False,False,correct,1,1,0,0,True,False,False,4937.636799993925,,45,45,\boxed{45} 种选法.,\boxed{45} 种选法.
+rag,s096,排列组合,排列数,medium,用数字 1、2、3、4 组成无重复数字的三位数，共有多少个？,scalar,24,1,True,True,False,False,correct,1,1,0,0,True,False,False,8939.8852000013,,24,24,\boxed{24} 个.,\boxed{24} 个.
+rag,s097,排列组合,组合概率,medium,从 6 人中选 3 人，其中指定的甲必须入选，有多少种选法？,scalar,10,1,True,True,False,False,correct,1,1,0,0,True,False,False,6534.13700000965,,10,10,10 种选法.,10 种选法.
+rag,s098,排列组合,二项式定理,medium,(x+1)^5 展开式中 x² 的系数是多少？,scalar,10,1,True,True,False,False,correct,1,1,0,0,True,False,False,4536.166899997625,,10,10,(x+1) 展开式中 x 的系数是 \boxed{10}.,(x+1) 展开式中 x 的系数是 \boxed{10}.
+rag,s099,排列组合,排列限制,medium,4 个不同的人排成一排，甲必须站在最左端，共有多少种排法？,scalar,6,1,True,True,False,False,correct,1,1,0,0,True,False,False,5864.726800005883,,6,6,\boxed{6} 种排法.,\boxed{6} 种排法.
+rag,s100,排列组合,组合限制,medium,7 人中选 3 人，甲和乙不能同时入选，共有多少种选法？,scalar,30,1,True,True,False,False,correct,1,1,0,0,True,False,False,6241.163300001062,,30,30,30 种选法.,30 种选法.

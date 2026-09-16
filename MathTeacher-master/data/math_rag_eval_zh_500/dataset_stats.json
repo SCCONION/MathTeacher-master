@@ -1,0 +1,27 @@
+{
+  "name": "MathTutor 中文数学 RAG 检索评测集（Synthetic v1）",
+  "queries": 50,
+  "documents": 500,
+  "qrels": 50,
+  "gold_documents": 50,
+  "hard_negatives": 150,
+  "background_negatives": 300,
+  "topics": {
+    "二次函数": 5,
+    "方程与不等式": 5,
+    "三角函数": 5,
+    "数列": 5,
+    "概率统计": 5,
+    "导数": 5,
+    "积分": 5,
+    "平面几何": 5,
+    "向量": 5,
+    "排列组合": 5
+  },
+  "query_types": {
+    "direct": 15,
+    "semantic": 20,
+    "formula": 15
+  },
+  "note": "每个 query 恰有 1 个 gold document，因此本数据集上的 Recall@K 数值等同于 Hit@K。"
+}

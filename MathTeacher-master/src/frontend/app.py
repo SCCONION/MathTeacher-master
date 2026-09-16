@@ -398,24 +398,11 @@ def _render_question_banner(placeholder) -> None:
 
     with placeholder.container():
         st.markdown(
-            f"""<div style="
-                background: linear-gradient(90deg, #0d1f33 0%, #0a1628 100%);
-                border: 1px solid #1e3a5a;
-                border-left: 4px solid #3b82f6;
-                border-radius: 8px;
-                padding: 10px 16px;
-                margin-bottom: 12px;
-                font-size: 0.88rem;
-                color: #c8d8f0;
-                display: flex;
-                align-items: flex-start;
-                gap: 10px;
-            ">
-                <span style="font-size:1.1rem;flex-shrink:0">{icon}</span>
+            f"""<div class="q-banner">
+                <span class="q-banner-icon">{icon}</span>
                 <div>
-                    <div style="font-size:0.70rem;color:#4a6080;text-transform:uppercase;
-                                letter-spacing:0.08em;margin-bottom:3px">当前题目</div>
-                    <div style="line-height:1.5">{_html.escape(display_text)}</div>
+                    <div class="q-banner-kicker">当前题目</div>
+                    <div class="q-banner-text">{_html.escape(display_text)}</div>
                 </div>
             </div>""",
             unsafe_allow_html=True,
@@ -789,8 +776,9 @@ with col_chat:
     #  NORMAL INPUT BLOCK
     # ══════════════════════════════════════════════════════════════════════════
     else:
-        mode = st.radio("输入方式", ["文本", "图片", "语音"],
-                        horizontal=True, label_visibility="collapsed")
+        mode = st.pills("输入方式", ["文本", "图片", "语音"],
+                        selection_mode="single", default="文本",
+                        label_visibility="collapsed")
         text_input = image_file = audio_file = None
         if mode == "文本":
             text_input = st.chat_input("请输入你的数学问题")

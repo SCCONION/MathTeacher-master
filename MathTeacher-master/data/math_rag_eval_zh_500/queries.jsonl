@@ -1,0 +1,50 @@
+{"id": "q001", "query": "二次函数 y=ax²+bx+c 的顶点横坐标怎么求？", "topic": "二次函数", "concept": "顶点横坐标与对称轴", "query_type": "direct", "gold_doc_id": "d001"}
+{"id": "q002", "query": "不真正解方程，怎样判断一元二次方程有几个实数根？", "topic": "二次函数", "concept": "判别式与实根个数", "query_type": "semantic", "gold_doc_id": "d002"}
+{"id": "q003", "query": "x=(-b±√(b²-4ac))/(2a) 是哪一个公式，解决什么问题？", "topic": "二次函数", "concept": "求根公式", "query_type": "formula", "gold_doc_id": "d003"}
+{"id": "q004", "query": "如果想直接看出抛物线的最高点或最低点，通常把一般式化成什么形式？", "topic": "二次函数", "concept": "配方法与最值", "query_type": "semantic", "gold_doc_id": "d004"}
+{"id": "q005", "query": "已知 ax²+bx+c=0 的两个根 x₁、x₂，不直接求根怎样得到它们的和与积？", "topic": "二次函数", "concept": "韦达定理", "query_type": "direct", "gold_doc_id": "d005"}
+{"id": "q006", "query": "方程 |x|=a 在什么条件下有解，解是什么？", "topic": "方程与不等式", "concept": "绝对值方程", "query_type": "direct", "gold_doc_id": "d006"}
+{"id": "q007", "query": "已知二次函数开口向上且有两个零点，怎样判断 ax²+bx+c>0 的解集位置？", "topic": "方程与不等式", "concept": "二次不等式符号", "query_type": "semantic", "gold_doc_id": "d007"}
+{"id": "q008", "query": "a+b≥2√(ab) 的使用条件和等号条件分别是什么？", "topic": "方程与不等式", "concept": "基本不等式", "query_type": "formula", "gold_doc_id": "d008"}
+{"id": "q009", "query": "怎样用一个经典不等式把 (a₁b₁+…+aₙbₙ)² 与平方和联系起来？", "topic": "方程与不等式", "concept": "柯西不等式", "query_type": "semantic", "gold_doc_id": "d009"}
+{"id": "q010", "query": "解含有分母的有理不等式时，为什么不能直接把分母乘到不等号两边？", "topic": "方程与不等式", "concept": "分式不等式", "query_type": "direct", "gold_doc_id": "d010"}
+{"id": "q011", "query": "三角形中，已知一组边角对应关系，想把边和其对角联系起来可以用什么定理？", "topic": "三角函数", "concept": "正弦定理", "query_type": "direct", "gold_doc_id": "d011"}
+{"id": "q012", "query": "已知三角形两边及其夹角，怎样求第三边？", "topic": "三角函数", "concept": "余弦定理", "query_type": "semantic", "gold_doc_id": "d012"}
+{"id": "q013", "query": "sin(A+B) 和 cos(A+B) 的展开式分别是什么？", "topic": "三角函数", "concept": "两角和公式", "query_type": "formula", "gold_doc_id": "d013"}
+{"id": "q014", "query": "只知道 sin x 和 cos x 时，怎样表示 sin 2x 与 cos 2x？", "topic": "三角函数", "concept": "二倍角公式", "query_type": "semantic", "gold_doc_id": "d014"}
+{"id": "q015", "query": "sin²x+cos²x=1 和 tan x=sin x/cos x 反映了什么关系？", "topic": "三角函数", "concept": "同角基本关系", "query_type": "direct", "gold_doc_id": "d015"}
+{"id": "q016", "query": "已知等差数列首项 a₁ 和公差 d，怎样直接求第 n 项？", "topic": "数列", "concept": "等差数列通项", "query_type": "direct", "gold_doc_id": "d016"}
+{"id": "q017", "query": "一个等差数列知道首项和第 n 项，前 n 项和怎样快速计算？", "topic": "数列", "concept": "等差数列前n项和", "query_type": "semantic", "gold_doc_id": "d017"}
+{"id": "q018", "query": "aₙ=a₁q^(n-1) 是什么公式，其中 q 表示什么？", "topic": "数列", "concept": "等比数列通项", "query_type": "formula", "gold_doc_id": "d018"}
+{"id": "q019", "query": "当 q≠1 时，等比数列的前 n 项和怎样表示？", "topic": "数列", "concept": "等比数列前n项和", "query_type": "semantic", "gold_doc_id": "d019"}
+{"id": "q020", "query": "一个数列只给出 aₙ₊₁-aₙ=d 且给出 a₁，怎样判断并写出通项？", "topic": "数列", "concept": "递推到通项", "query_type": "direct", "gold_doc_id": "d020"}
+{"id": "q021", "query": "在已经知道事件 B 发生的条件下，事件 A 的概率怎样计算？", "topic": "概率统计", "concept": "条件概率", "query_type": "direct", "gold_doc_id": "d021"}
+{"id": "q022", "query": "已知 P(B|A)、P(A) 和 P(B)，怎样反推出 P(A|B)？", "topic": "概率统计", "concept": "贝叶斯定理", "query_type": "semantic", "gold_doc_id": "d022"}
+{"id": "q023", "query": "P(A)=ΣP(Bᵢ)P(A|Bᵢ) 在什么条件下成立？", "topic": "概率统计", "concept": "全概率公式", "query_type": "formula", "gold_doc_id": "d023"}
+{"id": "q024", "query": "离散随机变量的各个取值和对应概率已知，怎样计算它的平均水平？", "topic": "概率统计", "concept": "数学期望", "query_type": "semantic", "gold_doc_id": "d024"}
+{"id": "q025", "query": "怎样用数学公式衡量随机变量围绕期望的波动程度？", "topic": "概率统计", "concept": "方差", "query_type": "direct", "gold_doc_id": "d025"}
+{"id": "q026", "query": "函数在 x₀ 处的瞬时变化率从极限角度怎样定义？", "topic": "导数", "concept": "导数定义", "query_type": "direct", "gold_doc_id": "d026"}
+{"id": "q027", "query": "如果 f(x)=xⁿ，怎样快速得到它的导函数？", "topic": "导数", "concept": "幂函数求导", "query_type": "semantic", "gold_doc_id": "d027"}
+{"id": "q028", "query": "(f(g(x)))'=f'(g(x))·g'(x) 这是什么法则？", "topic": "导数", "concept": "链式法则", "query_type": "formula", "gold_doc_id": "d028"}
+{"id": "q029", "query": "两个可导函数相乘时，导数为什么不是简单地把两个导数相乘？正确公式是什么？", "topic": "导数", "concept": "乘积法则", "query_type": "semantic", "gold_doc_id": "d029"}
+{"id": "q030", "query": "f'(x)>0 或 f'(x)<0 分别怎样判断函数的单调性？", "topic": "导数", "concept": "单调性判定", "query_type": "formula", "gold_doc_id": "d030"}
+{"id": "q031", "query": "不定积分为什么会多出一个常数 C？", "topic": "积分", "concept": "不定积分", "query_type": "direct", "gold_doc_id": "d031"}
+{"id": "q032", "query": "如果知道 f 的一个原函数 F，怎样计算 ∫ₐᵇ f(x)dx？", "topic": "积分", "concept": "定积分与原函数", "query_type": "semantic", "gold_doc_id": "d032"}
+{"id": "q033", "query": "n≠-1 时，∫xⁿdx 的结果是什么？", "topic": "积分", "concept": "幂函数积分", "query_type": "formula", "gold_doc_id": "d033"}
+{"id": "q034", "query": "积分里出现一个复合表达式和它的导数因子时，通常可以用什么方法简化？", "topic": "积分", "concept": "换元积分", "query_type": "semantic", "gold_doc_id": "d034"}
+{"id": "q035", "query": "∫u dv=uv-∫v du 这是什么积分方法？", "topic": "积分", "concept": "分部积分", "query_type": "formula", "gold_doc_id": "d035"}
+{"id": "q036", "query": "直角三角形的三边长度满足什么基本关系？", "topic": "平面几何", "concept": "勾股定理", "query_type": "direct", "gold_doc_id": "d036"}
+{"id": "q037", "query": "已知三角形两边 a、b 以及它们的夹角 C，怎样求面积？", "topic": "平面几何", "concept": "三角形面积", "query_type": "semantic", "gold_doc_id": "d037"}
+{"id": "q038", "query": "两个三角形相似时，对应边长度和面积之间有什么数量关系？", "topic": "平面几何", "concept": "相似三角形", "query_type": "formula", "gold_doc_id": "d038"}
+{"id": "q039", "query": "同弧所对的圆周角与圆心角之间是什么关系？", "topic": "平面几何", "concept": "圆周角定理", "query_type": "semantic", "gold_doc_id": "d039"}
+{"id": "q040", "query": "若 OP 是圆在 P 点的半径，P 点切线 l 与 OP 满足什么关系？", "topic": "平面几何", "concept": "切线与半径", "query_type": "formula", "gold_doc_id": "d040"}
+{"id": "q041", "query": "二维向量 a=(x,y) 的长度怎样计算？", "topic": "向量", "concept": "向量模长", "query_type": "direct", "gold_doc_id": "d041"}
+{"id": "q042", "query": "怎样用两个向量的坐标计算它们的数量积？", "topic": "向量", "concept": "向量点积", "query_type": "semantic", "gold_doc_id": "d042"}
+{"id": "q043", "query": "对非零向量，a·b=0 能推出什么几何关系？", "topic": "向量", "concept": "垂直条件", "query_type": "formula", "gold_doc_id": "d043"}
+{"id": "q044", "query": "已知两个非零向量的点积和模长，怎样求它们夹角的余弦？", "topic": "向量", "concept": "夹角余弦", "query_type": "semantic", "gold_doc_id": "d044"}
+{"id": "q045", "query": "a=(x₁,y₁)、b=(x₂,y₂) 时，2a-b 的坐标公式是什么？", "topic": "向量", "concept": "坐标线性运算", "query_type": "formula", "gold_doc_id": "d045"}
+{"id": "q046", "query": "完成一件事有若干种互斥的方法，应该把各方法数相加还是相乘？", "topic": "排列组合", "concept": "加法原理", "query_type": "direct", "gold_doc_id": "d046"}
+{"id": "q047", "query": "完成一个任务必须依次经过多个步骤，各步选择数怎样合成总方案数？", "topic": "排列组合", "concept": "乘法原理", "query_type": "semantic", "gold_doc_id": "d047"}
+{"id": "q048", "query": "A(n,m)=n!/(n-m)! 表示什么，是否考虑顺序？", "topic": "排列组合", "concept": "排列数", "query_type": "formula", "gold_doc_id": "d048"}
+{"id": "q049", "query": "从 n 个不同元素中只选 m 个、不考虑顺序时，应该怎样计数？", "topic": "排列组合", "concept": "组合数", "query_type": "semantic", "gold_doc_id": "d049"}
+{"id": "q050", "query": "(a+b)^n=ΣC(n,k)a^(n-k)b^k 是什么定理？", "topic": "排列组合", "concept": "二项式定理", "query_type": "formula", "gold_doc_id": "d050"}

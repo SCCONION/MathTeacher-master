@@ -1,0 +1,527 @@
+{
+  "evaluation": {
+    "dataset": "自建中文数学 RAG 检索评测集",
+    "query_count": 50,
+    "corpus_count": 500,
+    "one_gold_per_query": true,
+    "note": "本数据集每个 Query 仅 1 个 gold，因此 Recall@K 数值等同于 Hit@K。"
+  },
+  "project_config": {
+    "EMBED_DIM": 1024,
+    "TOP_K": 5,
+    "MIN_SCORE": 0.5,
+    "RRF_K": 60,
+    "dense_candidates": 10,
+    "sparse_candidates": 10
+  },
+  "index_build_seconds": 4.801295899989782,
+  "summary": {
+    "BM25-only (项目当前)": {
+      "queries": 50,
+      "Recall@1": 0.54,
+      "Recall@5": 0.62,
+      "MRR@5": 0.5706666666666667,
+      "avg_latency_ms": 0.40577399980975315,
+      "avg_returned": 5.0
+    },
+    "FAISS-only (项目BGE)": {
+      "queries": 50,
+      "Recall@1": 0.64,
+      "Recall@5": 0.86,
+      "MRR@5": 0.7273333333333334,
+      "avg_latency_ms": 18.941476000472903,
+      "avg_returned": 5.0
+    },
+    "Hybrid RRF (去掉CRAG消融)": {
+      "queries": 50,
+      "Recall@1": 0.7,
+      "Recall@5": 0.9,
+      "MRR@5": 0.7686666666666666,
+      "avg_latency_ms": 18.719980000169016,
+      "avg_returned": 5.0
+    },
+    "Project Hybrid RRF + CRAG": {
+      "queries": 50,
+      "Recall@1": 0.7,
+      "Recall@5": 0.9,
+      "MRR@5": 0.7833333333333333,
+      "avg_latency_ms": 19.738685999182053,
+      "avg_returned": 4.06
+    }
+  },
+  "details": {
+    "BM25-only (项目当前)": {
+      "overall": {
+        "queries": 50,
+        "Recall@1": 0.54,
+        "Recall@5": 0.62,
+        "MRR@5": 0.5706666666666667,
+        "avg_latency_ms": 0.40577399980975315,
+        "avg_returned": 5.0
+      },
+      "by_query_type": {
+        "direct": {
+          "queries": 15,
+          "Recall@1": 0.4666666666666667,
+          "Recall@5": 0.6,
+          "MRR@5": 0.5133333333333333,
+          "avg_latency_ms": 0.4003066666579495,
+          "avg_returned": 5.0
+        },
+        "formula": {
+          "queries": 15,
+          "Recall@1": 0.8,
+          "Recall@5": 0.8666666666666667,
+          "MRR@5": 0.8333333333333334,
+          "avg_latency_ms": 0.483106667525135,
+          "avg_returned": 5.0
+        },
+        "semantic": {
+          "queries": 20,
+          "Recall@1": 0.4,
+          "Recall@5": 0.45,
+          "MRR@5": 0.4166666666666667,
+          "avg_latency_ms": 0.3518749988870695,
+          "avg_returned": 5.0
+        }
+      },
+      "by_topic": {
+        "三角函数": {
+          "queries": 5,
+          "Recall@1": 0.6,
+          "Recall@5": 0.6,
+          "MRR@5": 0.6,
+          "avg_latency_ms": 0.45467999880202115,
+          "avg_returned": 5.0
+        },
+        "二次函数": {
+          "queries": 5,
+          "Recall@1": 0.4,
+          "Recall@5": 0.6,
+          "MRR@5": 0.5,
+          "avg_latency_ms": 0.7337399991229177,
+          "avg_returned": 5.0
+        },
+        "向量": {
+          "queries": 5,
+          "Recall@1": 0.6,
+          "Recall@5": 0.6,
+          "MRR@5": 0.6,
+          "avg_latency_ms": 0.27439999976195395,
+          "avg_returned": 5.0
+        },
+        "导数": {
+          "queries": 5,
+          "Recall@1": 0.4,
+          "Recall@5": 0.6,
+          "MRR@5": 0.5,
+          "avg_latency_ms": 0.3624800010584295,
+          "avg_returned": 5.0
+        },
+        "平面几何": {
+          "queries": 5,
+          "Recall@1": 0.2,
+          "Recall@5": 0.2,
+          "MRR@5": 0.2,
+          "avg_latency_ms": 0.26687999488785863,
+          "avg_returned": 5.0
+        },
+        "排列组合": {
+          "queries": 5,
+          "Recall@1": 0.6,
+          "Recall@5": 0.6,
+          "MRR@5": 0.6,
+          "avg_latency_ms": 0.36829999880865216,
+          "avg_returned": 5.0
+        },
+        "数列": {
+          "queries": 5,
+          "Recall@1": 0.8,
+          "Recall@5": 1.0,
+          "MRR@5": 0.8666666666666666,
+          "avg_latency_ms": 0.45495999802369624,
+          "avg_returned": 5.0
+        },
+        "方程与不等式": {
+          "queries": 5,
+          "Recall@1": 0.8,
+          "Recall@5": 0.8,
+          "MRR@5": 0.8,
+          "avg_latency_ms": 0.3391600039321929,
+          "avg_returned": 5.0
+        },
+        "概率统计": {
+          "queries": 5,
+          "Recall@1": 0.4,
+          "Recall@5": 0.6,
+          "MRR@5": 0.44000000000000006,
+          "avg_latency_ms": 0.5230000009760261,
+          "avg_returned": 5.0
+        },
+        "积分": {
+          "queries": 5,
+          "Recall@1": 0.6,
+          "Recall@5": 0.6,
+          "MRR@5": 0.6,
+          "avg_latency_ms": 0.28014000272378325,
+          "avg_returned": 5.0
+        }
+      }
+    },
+    "FAISS-only (项目BGE)": {
+      "overall": {
+        "queries": 50,
+        "Recall@1": 0.64,
+        "Recall@5": 0.86,
+        "MRR@5": 0.7273333333333334,
+        "avg_latency_ms": 18.941476000472903,
+        "avg_returned": 5.0
+      },
+      "by_query_type": {
+        "direct": {
+          "queries": 15,
+          "Recall@1": 0.6,
+          "Recall@5": 0.9333333333333333,
+          "MRR@5": 0.7133333333333333,
+          "avg_latency_ms": 19.32297333648118,
+          "avg_returned": 5.0
+        },
+        "formula": {
+          "queries": 15,
+          "Recall@1": 0.7333333333333333,
+          "Recall@5": 0.9333333333333333,
+          "MRR@5": 0.8333333333333334,
+          "avg_latency_ms": 19.643686667162303,
+          "avg_returned": 5.0
+        },
+        "semantic": {
+          "queries": 20,
+          "Recall@1": 0.6,
+          "Recall@5": 0.75,
+          "MRR@5": 0.6583333333333333,
+          "avg_latency_ms": 18.128694998449646,
+          "avg_returned": 5.0
+        }
+      },
+      "by_topic": {
+        "三角函数": {
+          "queries": 5,
+          "Recall@1": 0.8,
+          "Recall@5": 1.0,
+          "MRR@5": 0.8400000000000001,
+          "avg_latency_ms": 19.698239999706857,
+          "avg_returned": 5.0
+        },
+        "二次函数": {
+          "queries": 5,
+          "Recall@1": 0.8,
+          "Recall@5": 0.8,
+          "MRR@5": 0.8,
+          "avg_latency_ms": 18.622900001355447,
+          "avg_returned": 5.0
+        },
+        "向量": {
+          "queries": 5,
+          "Recall@1": 0.6,
+          "Recall@5": 0.8,
+          "MRR@5": 0.6666666666666667,
+          "avg_latency_ms": 18.484819994773716,
+          "avg_returned": 5.0
+        },
+        "导数": {
+          "queries": 5,
+          "Recall@1": 0.4,
+          "Recall@5": 1.0,
+          "MRR@5": 0.6666666666666667,
+          "avg_latency_ms": 19.131739999284036,
+          "avg_returned": 5.0
+        },
+        "平面几何": {
+          "queries": 5,
+          "Recall@1": 0.6,
+          "Recall@5": 0.8,
+          "MRR@5": 0.6666666666666667,
+          "avg_latency_ms": 17.24194000416901,
+          "avg_returned": 5.0
+        },
+        "排列组合": {
+          "queries": 5,
+          "Recall@1": 1.0,
+          "Recall@5": 1.0,
+          "MRR@5": 1.0,
+          "avg_latency_ms": 15.180060002603568,
+          "avg_returned": 5.0
+        },
+        "数列": {
+          "queries": 5,
+          "Recall@1": 0.6,
+          "Recall@5": 0.8,
+          "MRR@5": 0.7,
+          "avg_latency_ms": 23.30822000221815,
+          "avg_returned": 5.0
+        },
+        "方程与不等式": {
+          "queries": 5,
+          "Recall@1": 0.4,
+          "Recall@5": 0.8,
+          "MRR@5": 0.6,
+          "avg_latency_ms": 18.757340003503487,
+          "avg_returned": 5.0
+        },
+        "概率统计": {
+          "queries": 5,
+          "Recall@1": 0.6,
+          "Recall@5": 0.8,
+          "MRR@5": 0.6666666666666667,
+          "avg_latency_ms": 16.349739997531287,
+          "avg_returned": 5.0
+        },
+        "积分": {
+          "queries": 5,
+          "Recall@1": 0.6,
+          "Recall@5": 0.8,
+          "MRR@5": 0.6666666666666667,
+          "avg_latency_ms": 22.639759999583475,
+          "avg_returned": 5.0
+        }
+      }
+    },
+    "Hybrid RRF (去掉CRAG消融)": {
+      "overall": {
+        "queries": 50,
+        "Recall@1": 0.7,
+        "Recall@5": 0.9,
+        "MRR@5": 0.7686666666666666,
+        "avg_latency_ms": 18.719980000169016,
+        "avg_returned": 5.0
+      },
+      "by_query_type": {
+        "direct": {
+          "queries": 15,
+          "Recall@1": 0.6,
+          "Recall@5": 0.9333333333333333,
+          "MRR@5": 0.7044444444444444,
+          "avg_latency_ms": 17.4656999995932,
+          "avg_returned": 5.0
+        },
+        "formula": {
+          "queries": 15,
+          "Recall@1": 0.9333333333333333,
+          "Recall@5": 0.9333333333333333,
+          "MRR@5": 0.9333333333333333,
+          "avg_latency_ms": 19.73428000055719,
+          "avg_returned": 5.0
+        },
+        "semantic": {
+          "queries": 20,
+          "Recall@1": 0.6,
+          "Recall@5": 0.85,
+          "MRR@5": 0.6933333333333334,
+          "avg_latency_ms": 18.89996500030975,
+          "avg_returned": 5.0
+        }
+      },
+      "by_topic": {
+        "三角函数": {
+          "queries": 5,
+          "Recall@1": 0.8,
+          "Recall@5": 0.8,
+          "MRR@5": 0.8,
+          "avg_latency_ms": 18.18508000287693,
+          "avg_returned": 5.0
+        },
+        "二次函数": {
+          "queries": 5,
+          "Recall@1": 0.8,
+          "Recall@5": 0.8,
+          "MRR@5": 0.8,
+          "avg_latency_ms": 16.85633999586571,
+          "avg_returned": 5.0
+        },
+        "向量": {
+          "queries": 5,
+          "Recall@1": 0.6,
+          "Recall@5": 0.8,
+          "MRR@5": 0.64,
+          "avg_latency_ms": 17.505880002863705,
+          "avg_returned": 5.0
+        },
+        "导数": {
+          "queries": 5,
+          "Recall@1": 0.8,
+          "Recall@5": 1.0,
+          "MRR@5": 0.8666666666666666,
+          "avg_latency_ms": 17.227320003439672,
+          "avg_returned": 5.0
+        },
+        "平面几何": {
+          "queries": 5,
+          "Recall@1": 0.6,
+          "Recall@5": 0.8,
+          "MRR@5": 0.64,
+          "avg_latency_ms": 22.436340001877397,
+          "avg_returned": 5.0
+        },
+        "排列组合": {
+          "queries": 5,
+          "Recall@1": 1.0,
+          "Recall@5": 1.0,
+          "MRR@5": 1.0,
+          "avg_latency_ms": 19.864500002586283,
+          "avg_returned": 5.0
+        },
+        "数列": {
+          "queries": 5,
+          "Recall@1": 0.8,
+          "Recall@5": 1.0,
+          "MRR@5": 0.8666666666666666,
+          "avg_latency_ms": 19.74053999874741,
+          "avg_returned": 5.0
+        },
+        "方程与不等式": {
+          "queries": 5,
+          "Recall@1": 0.6,
+          "Recall@5": 1.0,
+          "MRR@5": 0.7333333333333333,
+          "avg_latency_ms": 17.942579998634756,
+          "avg_returned": 5.0
+        },
+        "概率统计": {
+          "queries": 5,
+          "Recall@1": 0.6,
+          "Recall@5": 1.0,
+          "MRR@5": 0.74,
+          "avg_latency_ms": 18.179639996378683,
+          "avg_returned": 5.0
+        },
+        "积分": {
+          "queries": 5,
+          "Recall@1": 0.4,
+          "Recall@5": 0.8,
+          "MRR@5": 0.6,
+          "avg_latency_ms": 19.26157999841962,
+          "avg_returned": 5.0
+        }
+      }
+    },
+    "Project Hybrid RRF + CRAG": {
+      "overall": {
+        "queries": 50,
+        "Recall@1": 0.7,
+        "Recall@5": 0.9,
+        "MRR@5": 0.7833333333333333,
+        "avg_latency_ms": 19.738685999182053,
+        "avg_returned": 4.06
+      },
+      "by_query_type": {
+        "direct": {
+          "queries": 15,
+          "Recall@1": 0.6,
+          "Recall@5": 0.9333333333333333,
+          "MRR@5": 0.7333333333333333,
+          "avg_latency_ms": 20.2005399982833,
+          "avg_returned": 4.0
+        },
+        "formula": {
+          "queries": 15,
+          "Recall@1": 0.9333333333333333,
+          "Recall@5": 0.9333333333333333,
+          "MRR@5": 0.9333333333333333,
+          "avg_latency_ms": 19.467359999543987,
+          "avg_returned": 4.466666666666667
+        },
+        "semantic": {
+          "queries": 20,
+          "Recall@1": 0.6,
+          "Recall@5": 0.85,
+          "MRR@5": 0.7083333333333333,
+          "avg_latency_ms": 19.595789999584667,
+          "avg_returned": 3.8
+        }
+      },
+      "by_topic": {
+        "三角函数": {
+          "queries": 5,
+          "Recall@1": 0.8,
+          "Recall@5": 0.8,
+          "MRR@5": 0.8,
+          "avg_latency_ms": 19.281559996306896,
+          "avg_returned": 4.2
+        },
+        "二次函数": {
+          "queries": 5,
+          "Recall@1": 0.8,
+          "Recall@5": 0.8,
+          "MRR@5": 0.8,
+          "avg_latency_ms": 21.085419997689314,
+          "avg_returned": 4.2
+        },
+        "向量": {
+          "queries": 5,
+          "Recall@1": 0.6,
+          "Recall@5": 0.8,
+          "MRR@5": 0.6666666666666667,
+          "avg_latency_ms": 20.210439997026697,
+          "avg_returned": 3.8
+        },
+        "导数": {
+          "queries": 5,
+          "Recall@1": 0.8,
+          "Recall@5": 1.0,
+          "MRR@5": 0.9,
+          "avg_latency_ms": 17.454719997476786,
+          "avg_returned": 4.2
+        },
+        "平面几何": {
+          "queries": 5,
+          "Recall@1": 0.6,
+          "Recall@5": 0.8,
+          "MRR@5": 0.6666666666666667,
+          "avg_latency_ms": 20.713739999337122,
+          "avg_returned": 3.4
+        },
+        "排列组合": {
+          "queries": 5,
+          "Recall@1": 1.0,
+          "Recall@5": 1.0,
+          "MRR@5": 1.0,
+          "avg_latency_ms": 21.235519999754615,
+          "avg_returned": 4.0
+        },
+        "数列": {
+          "queries": 5,
+          "Recall@1": 0.8,
+          "Recall@5": 1.0,
+          "MRR@5": 0.8666666666666666,
+          "avg_latency_ms": 19.28749999788124,
+          "avg_returned": 4.6
+        },
+        "方程与不等式": {
+          "queries": 5,
+          "Recall@1": 0.6,
+          "Recall@5": 1.0,
+          "MRR@5": 0.7666666666666667,
+          "avg_latency_ms": 18.93613999709487,
+          "avg_returned": 4.0
+        },
+        "概率统计": {
+          "queries": 5,
+          "Recall@1": 0.6,
+          "Recall@5": 1.0,
+          "MRR@5": 0.7666666666666667,
+          "avg_latency_ms": 18.525780003983527,
+          "avg_returned": 3.6
+        },
+        "积分": {
+          "queries": 5,
+          "Recall@1": 0.4,
+          "Recall@5": 0.8,
+          "MRR@5": 0.6,
+          "avg_latency_ms": 20.65604000526946,
+          "avg_returned": 4.6
+        }
+      }
+    }
+  },
+  "production_failures": 5
+}

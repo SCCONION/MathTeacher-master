@@ -1,0 +1,21 @@
+{
+  "name": "MathTutor Solver Accuracy Evaluation 100 (Synthetic v1)",
+  "question_count": 100,
+  "topics": {
+    "二次函数": 10,
+    "方程与不等式": 10,
+    "三角函数": 10,
+    "数列": 10,
+    "概率统计": 10,
+    "导数": 10,
+    "积分": 10,
+    "平面几何": 10,
+    "向量": 10,
+    "排列组合": 10
+  },
+  "answer_types": {
+    "set": 5,
+    "scalar": 95
+  },
+  "note": "自建项目内数学解题评测集；所有题目均有确定性 gold，使用 SymPy/规则判分，不用 LLM Judge。"
+}
