@@ -1,0 +1,30 @@
+services:
+
+  # ── 开发容器（Codespaces 工作区）──────────────────────────────────────────
+  app:
+    image: mcr.microsoft.com/devcontainers/universal:2
+    volumes:
+      - ..:/workspaces:cached
+    command: sleep infinity
+    environment:
+      # 容器内通过服务名访问 Redis（覆盖 .env 中的 localhost）
+      REDIS_URL: redis://:jee_secret@redis:6379
+
+  # ── Redis Stack（长期记忆存储，与本地 docker-compose.yml 一致）─────────────
+  redis:
+    image: redis/redis-stack:latest
+    command: >
+      redis-stack-server
+        --requirepass jee_secret
+        --dir /data
+        --appendonly yes
+        --appendfsync everysec
+        --maxmemory 2gb
+        --maxmemory-policy allkeys-lru
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:

@@ -1,6 +1,12 @@
 
 
+# MathTeacher · AI 数学辅导系统
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/SCCONION/MathTutor-master)
+
 > 基于 LangGraph 多智能体架构的数学辅导系统：支持文本 / 图片（OCR）/ 语音（ASR）三种输入方式，具备混合检索（Hybrid CRAG）、三层长期记忆（Episodic / Semantic / Procedural）、自纠错闭环与人工介入（HITL）能力。
+
+> 🚀 **在线体验**：点击上方「Open in Codespaces」即可在云端一键启动完整环境（含 Redis）。首次启动需配置自己的 API Key（见下文）。
 
 ---
 
@@ -125,7 +131,38 @@ LangGraph 多智能体图（15 个节点）
 
 ## 6. 快速开始
 
-### 6.1 克隆项目
+### 6.0 方式一：GitHub Codespaces 一键体验（推荐）
+
+无需本地安装任何东西，点击仓库首页的 **「Open in Codespaces」** 徽章即可：
+
+1. 等待 Codespace 自动构建（Python 3.11 + Node 20 + Redis 已预配）。
+2. 构建完成后，复制环境变量模板并填入你自己的 API Key：
+
+   ```bash
+   cd /workspaces/MathTeacher-master
+   cp .env.example .env
+   # 编辑 .env，填入 DEEPSEEK_API_KEY（必填）等
+   ```
+
+3. 打开两个终端分别启动前后端：
+
+   ```bash
+   # 终端 1 —— 后端（端口 8000）
+   cd /workspaces/MathTeacher-master
+   uvicorn api.main:app --app-dir src --host 0.0.0.0 --port 8000
+   ```
+
+   ```bash
+   # 终端 2 —— 前端（端口 5173）
+   cd /workspaces/MathTeacher-master/web
+   npm run dev -- --host
+   ```
+
+4. 点击 Codespaces 弹出的端口转发提示（或右下角「端口」面板）打开 `5173` 即可访问。
+
+> ⚠️ **Google 登录说明**：公开演示环境下，需用你自己的 Google OAuth Client ID（配置对应 Codespaces 域名或使用 localhost 转发），并同步修改 `web/src/components/LoginScreen.tsx` 与后端 `GOOGLE_CLIENT_ID`。若仅想快速体验对话，可跳过登录，直接调用后端 API。
+
+### 6.1 方式二：克隆项目到本地
 
 ```bash
 git clone <仓库地址>

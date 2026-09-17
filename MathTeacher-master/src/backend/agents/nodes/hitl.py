@@ -90,19 +90,23 @@ class HITLAgent(BaseAgent):
 
             # ── Process human response into state updates ─────────────────────
             if hitl_type == "bad_input":
-                return _process_bad_input_response(human_response)
+                update = _process_bad_input_response(human_response)
 
             elif hitl_type == "clarification":
-                return _process_clarification_response(human_response, state)
+                update = _process_clarification_response(human_response, state)
 
             elif hitl_type == "verification":
-                return _process_verification_response(human_response)
+                update = _process_verification_response(human_response)
 
             elif hitl_type == "satisfaction":
-                return _process_satisfaction_response(human_response, state)
+                update = _process_satisfaction_response(human_response, state)
 
             else:
-                return {"hitl_required": False, "hitl_type": None, "hitl_interrupt": None}
+                update = {"hitl_required": False, "hitl_type": None, "hitl_interrupt": None}
+
+            # 携带完整日志，让流式层能正确标记本节点的 thinking 事件
+            update["agent_payload_log"] = state.get("agent_payload_log") or []
+            return update
 
         except GraphInterrupt:
             raise
@@ -314,11 +318,19 @@ def _process_satisfaction_response(r: dict, state: AgentState) -> dict:
         "hitl_required":      False,
         "hitl_interrupt":     None,
         "hitl_reason":        None,
-        # "final_response":     None,   # clear so UI shows new response
     }
- 
-    if not satisfied and follow_up:
-        # Inject the follow-up into the problem context for re-run
+
+    if satisfied:
+        # 满意 → 走 store_ltm 后结束。用简短确认替换旧的整段讲解，
+        # 否则 resume 后 build_response 仍返回旧 final_response，
+        # 前端会重复渲染一条完整讲解。
+        update["final_response"] = (
+            "👍 很高兴这次讲解对你有帮助！"
+            "本次学习情况已记录到你的学习档案，有新的问题随时问我。"
+        )
+    elif follow_up:
+        # 不满意且有追问 → 清空旧讲解，注入追问上下文，重新讲解
+        update["final_response"] = None
         parsed          = state.get("parsed_data") or {}
         original_text   = parsed.get("problem_text") or state.get("raw_text") or ""
         injected_text   = (
@@ -334,5 +346,8 @@ def _process_satisfaction_response(r: dict, state: AgentState) -> dict:
         logger.info(
             f"[HITL] Follow-up injected into problem context: {follow_up[:80]}"
         )
- 
+    else:
+        # 不满意但无追问 → 清空旧讲解，直接重新讲解
+        update["final_response"] = None
+
     return update

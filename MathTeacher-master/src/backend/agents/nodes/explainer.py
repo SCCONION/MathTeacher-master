@@ -98,9 +98,40 @@ class ExplainerAgent(BaseAgent):
                 ltm_hint         = ltm_hint,
             )
 
-            result: ExplainerOutput = self.llm.with_structured_output(
+            structured = self.llm.with_structured_output(
                 ExplainerOutput, method="function_calling"
-            ).invoke([HumanMessage(content=prompt)])
+            )
+
+            # DeepSeek 的 function_calling 偶发返回 None（约数成概率），
+            # 重试几次；仍失败则降级为「仅展示解题内容」，避免整条链路崩溃。
+            result: ExplainerOutput | None = None
+            for attempt in range(3):
+                result = structured.invoke([HumanMessage(content=prompt)])
+                if result is not None:
+                    break
+                logger.warning(
+                    f"[Explainer] structured output returned None "
+                    f"(attempt {attempt + 1}/3)"
+                )
+
+            if result is None:
+                result = ExplainerOutput(
+                    approach_summary="下面给出这道题的标准解答过程。",
+                    steps=[{
+                        "step_number": 1,
+                        "heading": "解答",
+                        "working": solution_text or "（解答内容暂缺，请重新提问。）",
+                        "result": str(solver_out.get("final_answer", "")),
+                        "why": None,
+                        "inline_diagram": None,
+                    }],
+                    final_answer=str(solver_out.get("final_answer", "")),
+                    key_formulae=[],
+                    key_concepts=[],
+                    common_mistakes=[],
+                    difficulty_rating=difficulty,
+                )
+                logger.warning("[Explainer] fell back to solution-only explanation")
 
             final_md      = render_md(result, problem_text)
             explainer_dict = result.model_dump()

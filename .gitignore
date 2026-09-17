@@ -3,3 +3,7 @@
 logs/
 uploads/
 =0.30
+
+# ── 私人文档（不公开到 GitHub）──────────────────────────────
+MathTeacher-master/面试讲解.md
+MathTeacher-master/使用文档.md

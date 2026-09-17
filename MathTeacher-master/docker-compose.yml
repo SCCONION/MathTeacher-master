@@ -1,5 +1,3 @@
-version: "3.9"
-
 # ═══════════════════════════════════════════════════════════════════════════════
 #  JEE Math Tutor — Docker Compose
 #
@@ -32,6 +30,7 @@ services:
     command: >
       redis-stack-server
         --requirepass jee_secret
+        --dir /data
         --appendonly yes
         --appendfsync everysec
         --maxmemory 2gb
