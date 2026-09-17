@@ -7,6 +7,7 @@ import ChatMessage from './components/ChatMessage'
 import ThinkingCard from './components/ThinkingCard'
 import HitlBar from './components/HitlBar'
 import LoginScreen from './components/LoginScreen'
+import Logo from './components/Logo'
 
 const RECENT = [
   { id: '1', title: '一元二次方程', icon: '📐' },
@@ -29,7 +30,9 @@ const SAMPLES = [
 function EmptyState({ onPick }: { onPick: (s: string) => void }) {
   return (
     <div className="empty-state">
-      <div className="empty-logo">🧮</div>
+      <div className="empty-logo">
+        <Logo size={56} />
+      </div>
       <h2 className="empty-title">AI 数学老师</h2>
       <p className="empty-sub">告诉我你的问题，我会逐步讲解、实时展示思考过程</p>
       <div className="sample-grid">
@@ -85,7 +88,9 @@ export default function App() {
     <div className="app">
       <header className="header">
         <div className="header-brand">
-          <span className="brand-logo">🧮</span>
+          <span className="brand-logo">
+            <Logo size={34} />
+          </span>
           <span className="brand-name">MathTeacher AI</span>
         </div>
         <div className="header-user">

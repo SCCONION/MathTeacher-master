@@ -68,9 +68,6 @@ body {
   height: 34px;
   display: grid;
   place-items: center;
-  font-size: 20px;
-  background: var(--primary-100);
-  border-radius: 9px;
 }
 
 .brand-name {
@@ -161,9 +158,6 @@ body {
   height: 64px;
   display: grid;
   place-items: center;
-  font-size: 34px;
-  background: var(--primary-100);
-  border-radius: 18px;
   margin-bottom: 16px;
 }
 
@@ -395,7 +389,8 @@ body {
 }
 
 .empty-logo {
-  font-size: 52px;
+  display: flex;
+  justify-content: center;
   margin-bottom: 12px;
 }
 

@@ -45,14 +45,15 @@ MathTeacher 是一个**面向数学学习场景的垂直领域 AI Agent 系统**
 | 分类 | 技术 |
 |---|---|
 | Agent 编排 | LangGraph（StateGraph / Checkpoint / ToolNode）、LangChain |
-| LLM | DeepSeek（DeepSeek-chat，通过 Groq SDK 兼容层调用） |
-| 向量检索 | BGE-large-zh-v1.5（Embedding）、FAISS（稠密检索）、BM25（稀疏检索）、RRF 融合 |
+| LLM | DeepSeek（deepseek-chat，经 LangChain ChatOpenAI 兼容层调用） |
+| 向量检索 | BGE-large-zh-v1.5（本地 Embedding，离线运行）、FAISS（稠密检索）、BM25（稀疏检索）、RRF 融合 |
 | 长期记忆 | Redis + RedisJSON + RedisVL（HNSW 向量索引） |
 | 工具 | SymPy（符号计算）、Tavily MCP（联网搜索）、PyPDF（PDF 解析） |
-| OCR / ASR | Google Cloud Vision（图片识别）、Groq Whisper（语音转写） |
-| 前端 | Streamlit（Web UI） |
-| 认证 | Google OAuth（st.login 原生登录） |
-| 测试 | pytest（78 个自动化测试）+ GitHub Actions CI |
+| OCR / ASR | DeepSeek Vision（deepseek-v4-flash-vision-exp 图片识别）、Groq Whisper（whisper-large-v3 语音转写） |
+| 后端 | FastAPI + Uvicorn（REST + SSE 流式接口） |
+| 前端 | React 18 + Vite 5 + TypeScript（流式对话 UI） |
+| 认证 | Google Identity Services（GIS）+ 后端 ID token 校验（JWT） |
+| 测试 | pytest + GitHub Actions CI |
 
 ---
 
@@ -122,10 +123,12 @@ LangGraph 多智能体图（15 个节点）
 | 互联网 | 调用 LLM / Embedding / 搜索 API 需要 |
 
 ### 需要的 API 密钥
-- **DeepSeek API Key**（LLM 推理，建议 ×2 避免限流）
-- **Cohere API Key**（Embedding，备用方案）
-- **Tavily API Key**（联网搜索，MCP 接入）
-- **Google Cloud**（Vision OCR + OAuth 凭据）
+- **DeepSeek API Key**（LLM 推理 + Vision OCR，必填）
+- **Groq API Key**（Whisper 语音转写 ASR，可选）
+- **Tavily API Key**（联网搜索，MCP 接入，可选）
+- **Google OAuth Client ID**（Google 登录，可选）
+
+> 💡 Embedding 使用本地模型 `BAAI/bge-large-zh-v1.5`，**无需** Cohere API Key。
 
 ---
 

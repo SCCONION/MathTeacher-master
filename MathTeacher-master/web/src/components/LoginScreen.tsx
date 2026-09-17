@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import Logo from './Logo'
 
 const GOOGLE_CLIENT_ID =
   '884766496961-u1tu99am3reupotc2f2rco5immul37sb.apps.googleusercontent.com'
@@ -66,7 +67,9 @@ export default function LoginScreen({ onLogin, loading, error }: Props) {
   return (
     <div className="login-screen">
       <div className="login-card">
-        <div className="login-logo">🧮</div>
+        <div className="login-logo">
+          <Logo size={64} />
+        </div>
         <h1 className="login-title">数学智能辅导助手</h1>
         <p className="login-subtitle">
           AI 分步解题，根据你的学习情况个性化讲解
